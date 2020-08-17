@@ -1,59 +1,28 @@
-<!--# xDD collaboration docker recipe
-## Objective
-Provide a base image and define a process for collaborators to use in building a Docker image to be deployed against subsets of the xDD corpus.
-
-## Needs
-- Application overview
-- Input definition (what documents and product are expected?)
-- Input expectations (e.g. read from /input?)
-- Output definition (what does the app spit out?)
-- Output expectations (e.g write to /output?)
-- Permissions 
-- Userid - test run
-- Resource estimates?
-- Terms of use document?
-
-
-
-## Previous attempts
-We tried to use a generic application template for similar purposes in the past:
-
-https://github.com/UW-Deepdive-Infrastructure/app-template
-
-A few people used it, but it didn't generate as many users as initially hoped. Additionally, for the few users who did use it, success often depended on my giving a lot of time and attention to help troubleshoot and debug things. Part of this is because I wanted to help and wanted to have people use xDD for science.
-
-Flaws:
-  - Too much complexity up-front. Needed to clone repo in git, potentially understand postgres, define thigs in config files, etc.
-  - From Czaplewski: "i think it didn't work because the goal of it was so poorly defined. "run apps" and "use our infrastructure" are not actionable"-->
-
-
-
-
 # Objective
 This document describes a recipe to create a docker image, containing all required software, in order for a text-datamining application to be deployed against the xDD corpus.
 
 # Background
 xDD is among the largest collections of text-and-datamining-ready scientific literature in the world. Through unique partnerships with publishers and access to high-throughput computing resources, the system enables researchers to develop science-driven applications using any of a number of available data products, including:
 
-- Stanford CoreNLP [todo link]
-- ScienceParse [todo link]
-- Extracted raw text [todo link]
+- Stanford CoreNLP (https://stanfordnlp.github.io/CoreNLP/)
+- ScienceParse (https://github.com/allenai/science-parse)
+- Extracted raw text 
 - OCRed representations
-- COSMOS-derived tables, figures, and captions
+- COSMOS-derived tables, figures, and captions (https://github.com/UW-COSMOS/cosmos)
 
 Users are empowered to utilize these products to mine and survey the literature, developing applications to extract entities, relationships, figures, tables, equations, models, trends, and predictions from relevant published works.
 
-Due to contractual obligations, these applications may only be deployed across wide subsets of the corpus within UW-Madison resources. The portability of docker containers [todo link] make them an ideal candidate for this deployment model -- a docker container developed by a scientist locally on their machine will be easily deployable within the computing resources available to xDD in UW-Madison's Center for High Throughput Computing (CHTC). 
+Due to contractual obligations, these applications may only be deployed across wide subsets of the corpus within UW-Madison resources. The portability of [docker](https://www.docker.com/) containers make them an ideal candidate for this deployment model -- a docker container developed by a scientist locally on their machine will be easily deployable within the computing resources available to xDD in UW-Madison's Center for High Throughput Computing (CHTC). 
 
 # Examples
 These are examples of applications deployed against the xDD infrastructure. 
 
-https://github.com/jonhusson/gdd_demo - Finds and extracts relationships between two sets of targets
-https://github.com/mclapham/app-template - Mines the literature for ichnofossil occurences 
-https://github.com/ItoErika/Reservoir_app - Extracts geologic units acting as aquifers
-https://github.com/bserna-usgs/app-template - Recognizes sentences related to the impact of dam removal
-https://github.com/aazaff/usgs_geochron - Mines for geochronology measurements
-https://github.com/adamancer/speciminer - Finds occurrences of USNM speciments mentioned in the literature
+- https://github.com/jonhusson/gdd_demo - Finds and extracts relationships between two sets of targets
+- https://github.com/mclapham/app-template - Mines the literature for ichnofossil occurences 
+- https://github.com/ItoErika/Reservoir_app - Extracts geologic units acting as aquifers
+- https://github.com/bserna-usgs/app-template - Recognizes sentences related to the impact of dam removal
+- https://github.com/aazaff/usgs_geochron - Mines for geochronology measurements
+- https://github.com/adamancer/speciminer - Finds occurrences of USNM speciments mentioned in the literature
 
 # Communicating application behavior
 The first step in the process is to communicate the application behavior to the xDD team.
@@ -65,8 +34,6 @@ The first step in the process is to communicate the application behavior to the 
 - What software does the application use?
 - What external dependencies, if any, exist (e.g. connection to an outside database)
 - What are the approximate resources required for the application? 
-
-[TODO: what is this communication channel? Email?]
 
 ## Defining an input 
 In order to deploy an application against the xDD, the _type_ and _set definition_ of input data must be defined. Fundamental questions of each are:
