@@ -1,0 +1,940 @@
+DEPARTMENT OF THE INTERIOR U.S. GEOLOGICAL SURVEY
+Foreshock Seismic-Energy-Release Functions: Tools for Estimating Time and Magnitude of Main Shocks
+
+David J. Varnes
+
+Open-File Report 87-^29
+
+This report is preliminary and has not been reviewed for conformity with U.S. Geological Survey editorial standards.
+
+Golden, Colorado
+
+1987
+
+CONTENTS
+
+Abstract......................................................... Introduction..................................................... Theoretical and Experimental Background in Deformation
+Kinetics....................................................... Interim Discussion............................................... Method of Foreshock Analysis..................................... Example Solution, Cremasta Lake Earthquake....................... Analyses of Other Foreshock Sequences............................ Synthetic Foreshock Series Controlled by IMPORT SERF............. Discussion and Conclusions ....................................... References.......................................................
+
+Page
+1 1
+3 13 15 16 23 33 35 37
+
+ILLUSTRATIONS
+
+Figure 1. 2.
+3. M. 5. 6.
+7. 8.
+9.
+10.
+
+Typical curves showing primary and tertiary creep..... A creep curve illustrating the \"pure Saito\" relation
+in which the product of the strain rate and the time remaining is a constant........................ Foreshocks of the Cremasta, Greece, earthquake of February 5, 1966....................................
+/T I/O
+Log(Z/E/10 )ergs versus time, Cremasta earthquake of February 5, 1966, M=5.9..........................
+Log 1Q (t -t) versus log (AE/E/At), Cremasta
+earthquake foreshock series......................... Cremasta Lake earthquake: Plot of the correlation
+coefficient r_? versus estimated time of main shock for various values of A in equation M......... Log(E/E-70) versus log(212,000-t), Cremasta foreshock sequence.................................. Summary of predictions of main-shock times from analysis of foreshock sequences of 10 different earthquakes......................................... Log Z/E versus time plot of the sequence preceding the eastern Shimane, Japan, earthquake of May 27, 1978, M=3.7................................. Plot of log0(Z/E--5) versus log\u00b0 (-t.fg-t-) of the
+foreshocks preceding the eastern Shimane earthquake of May 27, 1978.....................................
+
+Page 10 11 17 19 20
+21 22 24 25
+27
+
+ILLUSTRATIONS Continued
+11. Data concerning the Oaxaca, Mexico, earthquake of November 29, 1978...................................
+12. Plot of E/E versus t derived from the records of the local net during November 1978..................
+13. Plot of log E/E versus time for the last part of the foreshock sequence of the Oaxaca, Mexico, earthquake of November 29, 1978.....................
+14. Plot of log(t f -t) versus log rate of E/E for the
+foreshock sequence preceding the Oaxaca, Mexico, earthquake of November 29, 1978, Ms=7.7............. 15. Synthetic seismic series in which the cumulated energy release is constrained to follow an INPORT SERF relation................................ 16. Gutenberg-Richter plot of log N_ versus magnitude for four synthetic foreshock series whose energy release follows an INPORT SERF relation for various values of n.................................
+
+Page 28 29 30 31 3 1*
+36
+
+ii
+
+ABSTRACT
+In an analysis of seismic-energy release during 11 sequences of earthquakes that in retrospect can be classed as foreshocks, the accelerating rate of energy release follows, at least in part, a simple equation. This
+equation (1) is d(Z/E)/dt=C/(t -t)-, where Z/E is the cumulative sum until
+time, t_, of the square roots of individual foreshock energies computed from reported magnitudes; C_ and ri are constants; and t is a limiting time at which
+the rate of energy release becomes infinite. The possible time of a major foreshock or main shock, t , is found by the best fit of equation (1), or its
+integral, to step-like plots of Z/E versus time using successive estimates of t f in linearized regressions until the maximum coefficient of deter-mination, r.?, is obtained. Analyzed examples include sequences preceding earthquakes at Cremasta, Greece, 2/5/66; Haicheng, China, 2/M/75; Oaxaca, Mexico, 11/29/78; Petatlan, Mexico, 3/1^/79; and Central Chile, 3/3/85. In 31 estimates of main-shock time, made as the sequences developed, the errors in 24 were less than one-half and in 10 less than one tenth the time remaining between the time of the last data used and the main shock. Some precursory sequences, or parts of them, yield no solution. Two sequences appear to include in their first parts the aftershocks of a previous event; plots using the integral of equation (1) show the sequences are easily separable into aftershock and foreshock segments. If synthetic seismic sequences of shocks at equal time intervals are constrained to follow equation (1) for various values of ri, the resulting distributions of magnitudes closely follow the linear Gutenberg-Richter relation log N=a_-bM, and n. times b_ is a constant. Rate-process theory and continuum damage mechanics appear to offer leads toward understanding the physical bases for equation (1). In various forms and for decades, equation (1) has been used successfully to predict failure times of stressed metals and ceramics, landslides in soil and rock slopes, and volcanic eruptions.
+INTRODUCTION
+Only a fraction of earthquake events have been preceded by a recognized sequence of foreshocks; nevertheless, the study of foreshocks is an important component in efforts directed toward earthquake prediction. As used in this article, the term \"foreshock\" is not precisely defined in terms of time and space windows because the data used for analysis are derived from published sources and the criteria used by authors for reporting seismic events prior to a main shock are not uniform. Publications on past foreshock sequences have included much information on statistical distributions and probabilities in both time and space, development of empirical relations concerning growth in the number of shocks per unit time as the time of the main shock is approached, and cumulative plots of radiated seismic energy during periods as long as many decades prior to large events. Occasionally, both the numbers of shocks per unit time and the accumulated sum of radiated seismic energy accelerate during a foreshock sequence. The rate of shock incidence has been found to increase with an inverse power of the time remaining until the main shock, but little or no attention appears to have been given to defining specific functions that relate accelerating seismic-energy release either to time elapsed or to time remaining in the period preceding a main shock.
+
+The purpose here is to propose a simple foreshock energy-release function in its differential equation form, trace its relation to previous studies in deformation kinetics, and apply it in both differential and integrated forms to data on several foreshock and main-shock sequences of past earthquakes. These back-analyses indicate the possibility that in some cases with appropriate data, the time and, in some instances, the magnitude of main shocks can be rather closely estimated far enough in advance to provide a useful warning or prediction.
+
+The function proposed for the rate at which seismic energy is released during earthquake foreshock sequences is
+
+d(Z/E)/dt=C/t f-t)- ,
+
+(1)
+
+where Z/E is the accumulated sum of square roots of the energy of individual foreshocks recorded through time, t_; \u00a3 and ri are constants; and t f , the
+fundamental unknown, is a limiting time for the process at which the rate of energy release becomes infinite.
+
+The integrated form of equation (1) for n*1 is
+
+~t) 1 \"- ,
+
+(2)
+
+where (Z/E) is observed at some time, t. . Because neither C_ nor n. is known, the first term on the right side is combined with (Z/E).. into a lumped integration constant, A, giving
+
+Z/E+A=[C/(n-1)](t f-t) 1 ~- .
+
+(3)
+
+If you take logs and rearrange, equation (3) becomes
+
+log(t f-t)=[-1/(n-1)] log(Z/E+A)+[1/(n-1)] log[C/(n-1 ) ] ,
+
+(4)
+
+and equation (1) becomes
+
+log(t f-t)=(-1/n) log(dZ/E/dt)-Kl/n) log C .
+
+(5)
+
+If n=1 , the integration of equation (1 ) results in
+
+log(t f-t)=-2.30258(Z/E+A)/C
+
+and
+
+log(t f-t)=-log(dZ/E/dt)+log C .
+
+(5A)
+
+The critical characteristic of these equations is that they describe a process that ends catastrophically at a finite time; exponential or power-of time growth curves have no termination.
+
+Equations (4) and (5) are used later for analysis of actual foreshock
+
+data. An estimate of the approximate time of main shock, t f , is made by
+successive approximation and by the maximization of the correlation coefficient in linear regression. Numeric values for n_ and C_ are also determinable from the slope and the intercept of best-fit regressions. These two equations are relatively simple to handle and have the advantage that the two principal quantities involved as input data the time of events and their radiated seismic energy are those most commonly observed. Because only a time difference (t -t) appears in the equations, time zero at which the
+foreshock sequence actually begins does not need to be identified. If data successively earlier in time can be added to the analysis, the time of beginning or departure from a former steady state can become clear. Conversely, as data later in time become available, the estimate of t generally becomes more accurate.
+The physical reasons for equation (1) seem obscure. In a real system whose behavior is determined by past events and present attributes, how can the system's current rate of energy release be closely and simply related to a future unknown time of catastrophe? The answer might be that the true relation is not simple and that equation (1) is actually a useful and close approximation to something more complicated but more rational.
+Although for the present equations (1), (4), and (5) must be regarded as empirical, they have origins both in physical theory and in experiments. These areas concern time-dependent deformation, viscous and plastic flow, creep to rupture and rupture life, stable and critical crack propagation, and acoustic emission in a wide variety of manufactured and natural materials. In particular, the roots of equation (1) in its various forms where the energy term is replaced by strain or displacement extend into a large body of work on deformation kinetics going back more than 50 years.
+THEORETICAL AND EXPERIMENTAL BACKGROUND IN DEFORMATION KINETICS
+A search for the guiding principle behind foreshock energy release was followed along four paths toward possible convergence. The first is rateprocess theory, which has been found applicable to deformation processes in a wide variety of materials. The second path is the analysis of tertiary creep and the use of empirical relations among stress, strain, and time in order to estimate the time of failure of a wide variety of materials. The third analytic area is the development of continuum damage mechanics and its use in estimating the life of stressed-metal structural components. The fourth path is the direct use of relations between accumulated radiated seismic energy and the possible time of a volcanic eruption.
+Rate-Process Theory
+Neglecting some earlier but pertinent studies, we can begin with the work of Eyring and his associates (Glasstone et al., 19*11) in which viscosity and plasticity are related mathematically to thermal activation and to forces and rates of shear at atomic and molecular levels. This rate-process theory was developed originally for liquids but was subsequently extended to quantitative studies of the deformation of a wide variety of crystalline and amorphous solids. Its mathematical form is usually stated as
+
+dN kT
+
+AF
+
+if
+
+=N l- exp(-) 2 sinh
+
+.
+
+(6)
+
+The left side of the equation expresses the net rate at which bonds are broken, that bond repair also is possible; _N is the number of bonds currently existing per unit area, and f_ is an assumed constant force (due to applied exterior load) which acts on N_ bonds through an average distance, X, during the process of bond breaking. Free energy of activation for the process is AF, _k is Boltzmann's constant, ji is Planck's constant, and T_ is absolute temperature. The hyperbolic sine term results from the difference in probabilities between bond breaking and bond healing, where probabilities are expressed by two exponential terms of opposite sign. Thus, the process is biased toward bond breaking by the applied force, \u00a3. If this force is so high its effect far outweighs the effect of thermal oscillation, that is, if Xf\u00bbNkT, the healing process can be neglected, and the sinh term can be replaced by a single exponential term:
+
+2 sinh (Xf/NkT)=exp(Xf/NkT) .
+
+(7)
+
+Next, replace the Xf/NkT term, which defines local stress, by a term
+
+expressing its relation to the constant applied exterior stress,
+
+a:
+
+-
+
+*f/NkT=xa
+
+.
+
+(8)
+
+In a process resulting in rupture, the bonds are progressively used up, and as N approaches 0, the new variable x approaches infinity at the limiting time, t,r,; at ~t~=0, x = 1
+
+To simplify equation (6), assume that at a constant temperature the activation energy AF remains constant; then, let
+
+kT AF A=r exp(- )=a constant.
+
+(9)
+
+Equation (6) can then be written as dN x\u00b0
+-N =Ae -dt .
+
+(10)
+
+From equation (8), we have -dN/N=dx/x; so, equation (10) becomes
+
+n
+=Ae -dt
+A
+and
+
+(11)
+
+<\u00ab ~XO o J -___ dYX=A Jf d--t-==Av(\u00abt^f-t-_0)
+_t o
+
+.
+
+(12)
+
+Equation (12) expresses the remaining lifetime of a system in terms of an integral involving a constant exterior stress, a ; the variable x that
+increases as the number of unbroken bonds decreases; and the constant A that comprises material properties, temperature, and fundamental constants.
+
+To simplify equation (12), let
+
+xaQ =u .
+
+(13)
+
+Then equation (12) becomes
+
+e -u-
+j u -d-u=A-(t-f-t-o ) -o
+
+.
+
+(U)
+
+The integral on the left side of equation (14) cannot be expressed by a finite number of elementary functions; it is known as the exponential integral E.(u ), and its value is tabulated for values of u . Therefore,
+
+E_^u~ )=A~(t~L -t~- ) ,
+
+(15)
+
+and if one knows the value of YOo =u-o at t- =0 and the value of A, the time, t f , can be calculated directly. At this time, x and u. become infinite,
+the number of bonds becomes zero, and the process ends catastrophically.
+
+The integral E,.(u) can be expressed as a series,
+nn E (u)-Y-Anu-j; ( \" 1. n ,\" ,
+n=1 - -'
+
+(16)
+
+where Y=0.57721 . . . (Euler's constant). For large values of u_, E (u) is given approximately by E 1 (u)=u\" 1 exp(-u) ,
+so that equation (15) becomes approximately u~ 1 exp(-u)=A(t f-t)
+and, taking natural logarithms, -fcn u-u_=S,n_ A+\u00a3n_(t_-t) .
+
+(17) (18) (19)
+
+At large values of ju, fcn u becomes negligible compared to ju, and equation (19) becomes
+
+(2\u00b0)
+
+or
+
+(t f-t)=^e~ y
+
+(21)
+
+and, taking derivatives, or where u=a, the local stress.
+
+---=A, e-u= 1 dt -- t f-t
+HTF^t '
+
+(22)
+
+With the use of equation (9), equation (21) can be put in the form
+
+AF
+
+t f-t=B exp( a) ,
+
+(23)
+
+where B=h/kt.
+
+Equation (23) is the same as, or very similar to, equations relating stress to time to failure; remaining time; or lifetime of specimens of quartz in laboratory testing (Scholz, 1972), of rock (Kranz et al., 1982; Tomashevskaya, 1985), of samples of clayey soil (Murayama and Shibata, 1958), and of a wide variety of crystalline metallic and nonmetallic and amorphous materials (Zhurkov, 1965). It is remarkable that the rate-process theory, originally developed to give a physical explanation for viscosity at a molecular level, has been applied successfully in many different ways to vastly larger masses, thermally activated processes of creep and fracture of brittle materials (Krausz and Eyring, 1975), and stress corrosion and crack propagation in the solid earth (Anderson and Grew, 1977).
+In a paper on characteristics of foreshocks, Jones and Molnar (1979) used a simplified version of Scholz's expression for average lifetime of quartz in uniaxial compression,
+
+average(t f-t)=D exp(-aa) ,
+
+(24)
+
+to represent the average life of an asperity on a stressed fault plane. As asperities break, the constant exterior stress, a , is carried by fewer and
+fewer asperities and a decreasing area of contact. The process accelerates and ends in a main shock. Jones and Molnar (1979) use equation (11) and its integral to graph the relations between increasing local stress, aa x> anc*
+decreasing remaining time during the course of an idealized foreshock sequence and between these variables and the cumulative number of foreshocks.
+
+Equation (22) gives a relation between the rate of stress increase and the remaining time in a progressively failing system that might be useful in
+
+the study of the period preceding an earthquake. There are two difficulties, however: (1) there is the need to relate (t-t) to a quantity that is more
+easily observable than o and (2) the equation has been derived under conditions that a be \"large,\" but just what large means in actual conventional units of stress is not clear.
+The increasing rate in numbers of foreshocks preceding major shocks for collections of data within regions has been shown by Jones and Molnar (1979), as well as Papazachos (1973), to be proportional to an inverse power of remaining time. Perhaps because there is a difficulty in recognizing a sequence of events as precursory to a particular earthquake or because the number of events is insufficient to form a definite relation between rate and time, the use of numbers of events alone does not seem to have led to a quantitative prediction of main-shock time for a particular earthquake. Certainly, however, in many instances, a growing number of shocks per unit time has greatly affected local evaluation of impending hazard.
+Foreshocks generally vary irregularly in magnitude. Even though a general trend might exist toward more frequent shocks as time passes, the accumulated number of events and their increasing rate might not adequately define the physical process. The rate of seismic-energy release in the form E/E, which involves both the numbers of events and their severity, has increased meaning. No doubt, accumulated seismic moment would be better yet, but seismic moment is not often reported for individual shocks of a foreshock series.
+Plots of cumulated seismic energy, or E/E versus time, have been published often since their introduction and interpretation years ago by Benioff (1951). These plots primarily encompass either large areas or long periods of time, or both. Less work appears to have been done to interpret actual records of the accelerating release of seismic energy in detail and within the limited bounds of space and time around an actual potential or past earthquake. For this purpose, the use of equation (12) or its approximation, equation (22), requires relating rising local stress, a, to accumulating E/E.
+In each event, according to Benioff (1951, p. 42), \". . .if the elastic strain is fully relieved during fault movement, the square root of the radiated energy of an earthquake is proportional to the elastic strain (preceding the earthquake). . ..\" Also, if local elastic strain is proportional through material constants to local stress, we have for each event at a particular time
+
+The growing local stress, a, at some time, _t, after JL_ events is
+
+or can be shortened to
+
+i=n
+
+a =K I (/E).
+
+- i-o
+
+~
+
+K(E/EV .
+
+Thus, from equation (22), we get
+
+da<_ d(Z/E). \"~ ~-v ~ ~
+
+1
+
+dt - dt ~(t f-t) f
+
+which becomes the first result in this derivation equivalent to the relation sought, equation (1), in the case that n_=1 .
+
+Tertiary Creep
+
+When subjected to sustained loads sufficient to cause ultimate failure, many materials follow time-deformation creep curves of the type shown in figure 1. The initially high strain rate decreases to a minimum that can be of only momentary duration and then increases to the time of failure.
+
+Servi and Grant (1951) recognized that in a series of tests run to failure on the same material but at different stress levels, the minimum creep rate, which occurs at the point of inflection of a strain-time curve, multiplied by the time remaining to failure is a constant; that is,
+
+e m.m (-tI\u00ab-t-)=a constant.
+
+(26)
+
+After analyzing available data on the rupture life and minimum creep rate of a large number of pure metals and alloys, Monkman and Grant (1956) generalized equation (26) to the following form:
+log(t-,f,--t)+r1- log(e m.m )=log s- ,
+where r. and s_ are constants.
+
+This equation can be written as (sf-
+
+mm , -+\\t
+which states that the minimum strain rate is inversely proportional to a power of the time remaining to failure.
+
+In an analysis of slope failures in Japan, Saito (1969) extended the
+
+meaning of the Monkman-Grant expression to the whole of the tertiary creep-to-
+
+failure period by assuming the rate at any time in this period is proportional
+
+to a power of the remaining time; that is,
+
+de C it\" n '
+
+(27)
+
+f
+
+where e denotes either strain or displacement, Jt is the time of observation, t f is the time of failure, and C_ and n_ are constants. Saito
+found that in many instances n is near or equal to 1. If so, I have
+
+designated the relation as \"pure Saito,\" as shown in figure 2; if n*1 , the expression is referred to as \"generalized Saito.\" Equation (27) is of the same form as equation (1) but with Z/E replaced by e.
+
+Saito and his colleagues have been successful in applying equation (27) to predicting the time of failure of landslides from time-displacement observations and have applied it also in laboratory tests by others on soil and rock. Their work was extended (Varnes, 1983) and shown to apply to a wide variety of materials, including some metals, and, pertinent to the current article, to the emission of acoustic energy in the testing of rock to failure reported by Wu and Thomsen (1975).
+
+Continuum Damage Mechanics
+
+Relations between stress, strain, time, and an internal-state variable called \"damage\" were proposed for metals by Kachanov and modified by Rabotnov in Russian literature of the 1960 T s. These relations were further developed and generalized to multiaxial states of stress by Leckie and Hayhurst (1977) and to various mechanisms of creep damage by Ashby and Dyson (1986). Continuum damage mechanics has become a very active field of research in many directions, including application to anisotropic polycrystalline materials that develop cavities and cracks under stress. There seems no obvious reason to limit the concept to metals. The relations presented by Leckie and Hayhurst for isotropic material under uniaxial stress are
+
+e/eo =(a/oQ ) /(1-a>)
+
+(28)
+
+and
+
+o)/u> =(o/o ) /(1-oj) .
+0O
+
+(29)
+
+Equations (28) and (29) are expressions for accelerating creep in which to denotes the internal-state variable damage, w=0 when the material is initially undamaged, and w=1 at rupture. The dot indicates differentiation with respect to time. Just prior to the onset of accelerating tertiary creep, the steady-state strain rate, e , corresponds to applied stress, o , with
+
+w=o) ; j_, k_, \u00a3, and _q are constants.
+
+Under the assumption that the load, o, and, thus, the ratio (a/o ) remain
+constant and that t=0 when u)=0 and t=t,i. at u)=1 , equation (29) can be integrated to yield
+
+. (30)
+
+TIME
+FIGURE 1. Typical curves showing primary and tertiary creep; one shows a steady-state secondary creep part.
+10
+
+PURE SAITO RELATION
+dt (tf-t)
+CO
+CC
+TIME
+FIGURE 2. A creep curve illustrating the \"pure Saito\" relation in which the product of the strain rate and the time remaining (beyond the point of minimum rate) is a constant.
+
+This equation, combined with equation (28), gives
+\u00a3 o (o/0 o ) * de/dt=-
+
+which reduces to equation (27) of the preceding subsection on tertiary creep, de C
+
+a k/(g+D
+
+where C=e o (a/a o ) t-,f,
+
+and n-=k-/(q3+1).
+
+Leckie and Hayhurst emphasize that no specific physical interpretation is necessarily attached to the damage parameter, to, although to has been interpreted by some to represent the progressive decrease in the area capable of resisting load as a result of the formation and growth of cracks and voids. The same reasoning was used by Jones and Molnar (1979) in deriving the change in local stress as x increases from 1 to \u00b0\u00b0, where
+A-o
+x=r
+-u
+
+A is the original area of unbroken load-bearing asperities in a fault plane, and A is the area remaining unbroken at any time, t_, during the process. Thus, a relation can exist between to and Xt
+
+m u-Cl-(1/x)]
+
+(3D
+
+Although the concept of a) as an internal-state variable is more general than that of x\u00bb both are fundamental variables in the foreshock process.
+
+Volcanic Seismic Activity
+
+From extensive study of the seismic activity preceding the eruptions of andesitic volcano Bezymianny in Kamchatka, U.S.S.R., Tokarev (1963) developed the empirical equation
+
+X/E=a+b/(T-t) ,
+
+(32)
+
+where a_ and _b are constants (a_ is negative), and ^T is the limiting time of the process (corresponding to my t ). That is, T_ is the expected time of a major
+
+12
+
+eruption, and t_ is the time counted from the first earthquake in the cycle of activity being analyzed. Equation (32) is of the exact form of equation (3). As applied to six eruptive cycles of Bezymianny, the 1964 eruption of Sheveluch volcano (Kamchatka), and the 1962 eruption of Tokachi-dake in Japan, the value of T^ differed from the actual time of eruption by less than five days (Tokarev, 1972, 1985). By differentiation of equation (32) to yield
+
+d(Z/E)/dt=b/(T-t) 2 ,
+
+(33)
+
+equation (1) is recovered, and it is apparent that Tokarev's expression assumes that n_=2. Tokarev (1972) used the Benioff relation in which cumulative seismic strain is taken to be proportional to cumulative seismic energy. In the same article, Tokarev pointed out that earthquake energy is a more reliable characteristic of seismic activity than the number of events and that the number of events might show a sharp increase only a short time before an eruption.
+
+Since the May 18, 1980, eruption of Mount St. Helens in the State of Washington, seismic monitoring and measurement of deformation in the crater area have been used extensively to predict later, smaller eruptions (Swanson et al., 1985). Tokarev 's work has been referenced by workers at Mount St. Helens (Endo et al., 1981), and plots of Z/E versus time, with an indication of the most likely time of the beginning of an eruption, have been published (Malone et al., 1983); however, neither the mathematical form of the curve relating energy and time nor the method of estimating eruption time was given.
+
+INTERIM DISCUSSION
+The previous subsections indicate that in many diverse physical processes which lead to failure, the accelerating increase in the rates of stress, strain, or Z/E is inversely related to a power of the remaining time. In actual application to foreshocks, the exponent n_ is generally in the range 2-5; so, it is somewhat disappointing that although the development of rateprocess theory resulted in a relation between a and (t -t), the exponent
+n_=1 . This result might well have been caused by the various approximations that were made during the derivation. It might also be due in part to the assumption that the exterior (tectonic) stress on the system remains constant, which might not be realistic in some tectonic settings.
+
+An attempt was made to relate (t -t) to an expression concerning stress,
+as derived from rate-process theory, but without the assumption that from the beginning a is large and under the additional condition of external stress increasing linearly with time.
+
+In equations (11) and (13), the original a is replaced by aQ (1+bt), giving
+
+=Ae X~
+
+dt
+
+u =Afl e-
+
+Hdt.
+
+13
+
+and du
+
+This equation, like the exponential integral, expresses a process that ends catastrophically, but it does so sooner because of the term (1+_bJ:). As in the exponential integral, u_ cannot be expressed by a finite number of functions of t^. No tables exist evaluating this integral.
+A numeric experiment was performed in which equation (34) was integrated numerically, assuming, as an example, that
+A=.005 ,
+_u=.2 at _t=0 ,
+b=.03 , and
+du u(1+.03t) dt=.005 ue
+
+The integration was performed on a hand-held computer using a program for solution of differential equations by the fourth-order Runge-Kutta method. Step size was repeatedly halved as integration was carried out through short ranges. The numeric value of t was found to be close to 94.8309231. Then, knowing t f , I made an attempt to express du_/dt_ as a function of the powers of (t -t). This process essentially seeks the inverse of equations (15) and (16), where (t -t) is expressed as a series involving u_ with the added complication of the (1+bt) factor.
+The attempt was successful in the sense that the derived expression gives du
+a close approximation of clu/dlb even when u_ (local stress) and -rr are small.
+The approximation
+
+(d----t )=- 2407fT(-rf14-7;
+
+\"
+
+ct
+
+f
+
+3
+-tr
+
+7755
+
++
+
+6(tf13 -tr s81
+
+(35)
+
+du differs from the value of determined by numeric integration by less than
+dt d, u
+1 percent over the whole range in which increases from 0.00122140 by a
+
+14
+
+factor of more than 2x10 and (t f-t) decreases by a factor about 1x10 . The true relation may be an unending asymptotic series in (t-t). The attempt was unsuccessful in the sense that ^u_/^t_ could not be expressed by a single term of the form C/(t f-t) , where n is greater than 1.
+
+Method of Foreshock Analysis
+
+Return now to equations (4) and (5):
+
+log(t,i,-t)=[-1/(n-1)] log(I/E~ +A)+[1/(n~-1)] log[C/(n-1) ] and
+
+(4)
+
+log(t f-t)=(-1/n) log(dI/E/dt)+(1/n) log C .
+
+(5)
+
+The known quantities in a foreshock series, in which time and magnitude for each shock (above some lower limit) are reported, are I/E and t, the unknowns are t f , C, n, and A. The average rate, d(Z/E)/dt, can be
+calculated for any interval between chosen shocks.
+
+The procedure is to plot Z/E, or conveniently log (I/E), against time, yielding a steplike graph that is often referred to as a Benioff diagram, from early analyses of aftershock sequences (Benioff, 1951). The plot generally lies between upper and lower bounds, which over long periods of time can be approximately linear. We are concerned here with bounds that increase in slope with time and with the determination and test of equations which express this curve. A plot of log(Z/E) versus time which increases in slope indicates that the growth curve is supra-exponential and may be of the same form as equation (4). This _inverse power \u00a3f remaining _time sieismic energy release function will be referred to by the abbreviation INPORT SERF. The S, in broader context, may stand for strain or deformation.
+
+A set of points on either the upper or lower bound that appear to best define a regular curve are selected for analysis. Here, judgment enters, and in real life as data accumulate prior to an expected shock, revisions are to be expected. The set or sets of selected points now define values of Z/E and t to be tested in equations (4) or (5). In order to make a test of equation (4), for example, tentative estimates of t f and A must be made. With
+these initial estimates, pairs of values for log(I/E+A) and log(t f-t),
+usually 4 to 9 or 10 in number, can be used, respectively, for X, Y pairs in linear regression. The sums of squares of residuals, or the coefficient of determination, r , are determined for each regression equation that is derived from a set of pairs of (Z/E+A), (t-t) points using initial estimates
+for t f and A. The process is repeated with other estimates for t and A until
+a minimum sum of squares of residuals or a maximum value for r.2 is obtained. The value for r_ can be 0.999 or higher because X and Y, which have fixed values in conventional regression, are here adjustable to some extent to achieve as perfect a fit as possible. The regression equation having the best
+
+15
+
+fit with equation (4) has a slope of -1/(n-1), which gives an estimate for n_; the Y_ intercept yields the last term of equation (4), so the numeric value of C_ can be found.
+Equation (5), involving rates, has two disadvantages: (1) rates are a derived measure and, hence, can be less desirable than the direct measure of Z/E and (2) the number of X, Y pairs available for regression of rates and remaining time is always one less than the number of originally selected Z/E, t points on upper or lower bounds. This situation can result in too few pairs being available to form a satisfactory regression. Also, the time at which to plot accurately an average rate between two points on an upwardaccelerating curve is determinable only by a complicated function. It lies somewhere beyond the midpoint in a time interval, and generally, I have chosen to place it at a time that is two-thirds the interval from the earlier to the later time but have used other factors, ranging from 0.6 to 0.72, to maximize r. Despite this complication, rates have one great advantage: They can be used when the equation pertaining to Z/E itself cannot be used because of intervals that can occur when damage, to, continues to evolve, but seismic energy either is not released or is below the level of detection. For this reason and for mutual confirmation, it is well to try both the rate equation (5) and its integral equation (4). Moreover, differences in results can give some useful information about progress of the seismic process.
+EXAMPLE SOLUTION, CREMASTA LAKE EARTHQUAKE
+An illustrative example is furnished by the foreshock sequence preceding the Cremasta Lake earthquake in Greece, M =5.9, February 5, 1966. Magnitudes
+L
+and times of 20 foreshocks of M ^3.^ (as well as 161 aftershocks) were
+L
+reported by Comninakis et al. (l\"968, Table I). The sum of /E of the 20 individual foreshocks has been plotted against time in figure 3 together with a graph of the progressive rise in reservoir elevation as reported by Comninakis et al. (1968) and supplemented by Gupta et al. (1972). In computations involving rates and energy, the energy in ergs was calculated according to the relation logAE=11.8+1.5 M . Note that the first of the
+L
+tabulated foreshocks occurred more than 160,000 minutes before the second. Figure 4 shows the rest of the series and the main shock in a log Z/E versus time plot. The upper and lower bounds to the plot were well defined, and sets of points on each bound were used to test real data against equations (4) and (5).
+Lower-bound points at the base of lines dropped from selected (log Z/E,t) points were used to compute rates for use in equation (5); the points selected are the bases of lines dropped from points 1, 2, 5, 7, 10, 1 3, and 16. Rates were assigned to times at 0.6 of the intervals selected. The best value for t f , the predicted time of main shock, calculated by rates,
+r_2 =0.993i was 21 T, 750 minutes. This time is 62 minutes before the actual time of main shock. The last data point used in analysis, 16 base, at time 206,220, is 5,582 minutes, or 3.88 days before the main shock, which occurred at t f =211,802. Event 1 is the foreshock that took place long before the rest
+of the sequence. If it is omitted from the analysis of rates, as shown in
+16
+
+m 30 -i 300,
+
+c/) g 20
+LU
+H
+
+250-
+RESERVOIR ELEVATION
+
+CREMASTA 2/5/66
+
+x/ MAIN M L5.9
+
+0 250
+TIME SINCE 9/11/65 IN 10\" MINUTES
+FIGURE 3. Foreshocks of the Cremasta, Greece, earthquake of February 5, 1966. (a) Plot of E/E versus time, (b) Outline of data covered in figure ^. (c) Level of Cremasta Lake reservoir.
+
+figure 5, the estimated t f , r_p =0.985, is at 208,900 minutes, which is a much
+less accurate prediction.
+Upper-bound points 1, 2, 3, 6, 8, 12, 14, 15, and 18 were used to estimate A and t f with equation (4), which involves E/E rather than rates. The best estimate for A is -70x10 fi ergs 1 /? , which is small relative to values
+of E/E of 473.2x1O 6 at point 1 and 8,961.0x1O 6 at point 18. The best estimate for t f using values for E/E-70 at the nine named upper-bound points is
+212,000 minutes (figure 6), which is 3 hours and 18 minutes later than the actual time of main shock. The time of the last used data point, number 18, is t=206,524, which is 5,278 minutes or 3.67 days before the main shock.
+Figure 4 shows a common feature of a foreshock series a period of quiet or relative inactivity immediately preceding the main shock. In most of the foreshock series examined so far, such precursory quiescence does not appear to preclude the use of IMPORT SERF expressions constructed from earlier observations but might lead to estimates of t f that are too early and of main-
+shock magnitude that are too low. Figure 4 illustrates one of the various ways to make a rough estimate of the minimum magnitude of the coming main shock. In this instance, the upper bound is simply extended in a straight line through points 12 and 15 to the t f estimated by the upper-bound
+analysis. For a limited time, this procedure assumes a nonterminating exponential, rather than a terminating supra-exponential, growth in E/E. At the estimated t f of 212,000, the required shock following event 20 would have
+a magnitude of 5.6; the actual shock was MLI =5.9. Another way to estimate the main-shock magnitude is to use the developed relation between log(E/E+A)
+and log(t f ~t), calculate E/E at some small remaining time, and compute the
+necessary main shock to reach this total.
+Figure 7 shows a plot of log(212,000-_t) versus log(E/E-70) together with the line of regression through the numbered points on the upper bound.
+The Cremasta Lake earthquake has been related to filling of the reservoir and, thus, might be regarded as a special case. Foreshock sequences preceding earthquakes in other geologic settings are included in analyses presented in the next section.
+
+c/) 4o
+DC LU
+LU
+(D Q 3-
+
+CREMASTA 2/5/66
+
+MS9X
+
+riii 150 200
+TIME IN 103 MINUTES
+(\\ 1 /P
+FIGURE 4. Log(Z/E/10 )ergs versus time, Cremasta earthquake of February 5, 1966, M=5.9. Analysis with rates employed points on the lower bound at base of lines dropped from points 1 (out of view), 2, 5, 7, 10, 13, and 16. Analysis with (I/E+A) used points on upper-bound 1, 2, 3, 6, 8, 12, 1*J, 15, and 18. Predicted time of main shock, t , from use of I/E is
+212,000. Upper bound projected linearly through points 12 and 15 to t indicates predicted main shock of M =5.6.
+
+19
+
+CREMASTA
+
+5.0
+to O
+4.0
+3.-03.0
+
+.Rate 1B-2B
+
+Actual tf= 211,802
+
+.2B-5B
+
+Omitting Rate 1B-2B
+
+-7B
+Lower bound
+
+OB-13B 3B-16B
+
+tfp =208,900V < r2 =.985
+
+xtfp =211,750 r2 =.993
+
+-2.0 -1.0
+
+0.0
+
+LOG RATE
+
+FIGURE 5. Log 1Q (t -t) versus log (AZ/E/At), Cremasta earthquake foreshock
+
+series. Intervals used to compute rates from lower bound indicated by 1B-2B, 2B-5B, and so on (1B indicates base of line dropped from point 1 to lower bound). If early point 1B is included, the best line of
+regression indicates t\" 211,750; if 1B is omitted, t-f..e =208,900 a much
+less accurate prediction.
+
+10
+
+,99910-1
+
+CREMASTA 2/5/66
+ACTUAL tf PREDICTED tf D
+I
+
+K3
+.99905- A=-30
+
+=-100
+
+211,500
+
+212,000 MIN PROPOSED tfp
+
+FIGURE 6. Cremasta Lake earthquake: Plot of the correlation coefficient r_ versus estimated time of main shock for various values of.A-in equation *4. The maximum r is attained if A=-70x10 ergs and t\",f,B=212,000 minutes. The actual time of main shock was 211,802 minutes
+from time zero at OOhr OOmin September 11, 1965.
+
+MAIN ML 5.9
+
+CREMASTA 2/5/66
+
+LOG (212,000-t)
+FIGURE 7. Log(E/E-70) versus log(212,000-O, Cremasta foreshook sequence. The upper-bound points used for regression are numbered.
+22
+
+ANALYSES OF OTHER FORESHOCK SEQUENCES
+Results of 11 analyses are given in figure 8, which shows the error of prediction of main-shock time versus the time remaining after the last data used to make the prediction. Most analyses include the results of examining both E/E and the rate of energy release. In general, rates appear to give more accurate predictions. Some seismic sequences, or parts of them, although generally accelerating, do not follow equations (4) or (5), and predictions
+~\u00a3Bof t,, cannot be made.
+In most instances, the data used for analysis consist of published tables of times, magnitudes, and locations of foreshocks. Data for the YenyuanNinglang earthquake and for the very early part of the Haicheng sequence were in the form of spike graphs showing times and magnitudes. For most series, I accepted the space and time windows if these were stated by the authors and, of course, the lower limit on magnitudes of reported events. The remarks that follow are in the same numeric order as the foreshock analyses shown in figure 8.
+First is the eastern Shimane, Japan, earthquake of May 27, 1978, M=3\u00ab7 (Yamashina and Miura, 1980). This earthquake was preceded by a M=3*9 event 20.5 hours earlier, which had only two small foreshocks and perhaps six aftershocks. These aftershocks could easily be separated from the following 15 foreshocks of the M=3\u00ab7 event by examination of a log(E/E) versus time plot (figure 9). The change from aftershocks to foreshocks is also well shown in the plot of logCt-,i,p-t-) versus log(E/E-5), figure 10, in which the lower linear bound begins after event 9. A possible, although questionable, estimate of main-shock magnitude might be made following event 21 by projecting in figure 9 a line parallel to the line 17B-21B from point 20 to the vertical line at the estimated main-shock time. The estimated main-shock time using Z/E-5 was 2,581; using rate of seismic-energy release, the time was 2,599; and the actual main-shock time was 2,596. All times are in minutes from time zero taken at OOhr OOmin May 26, 1978.
+Second is Cremasta, which was already discussed.
+The third analysis is of the Haicheng, China, earthquake of February 4, 1975, M=7.3, which was analyzed using data from the excellent report by Jones et al. (1982) and supplemented with information from the review by Raleigh et al. (1977). Seventy-six events were used in the analysis, although the Haicheng event \"was preceded by over 500 foreshocks in the 4 days prior to and very near the epicenter of the mainshock\" (Jones et al., 1982). The long sequence made possible some attempts to reconstruct how an analysis might evolve and be modified as information is accumulated. The attempts were difficult and not very satisfactory primarily because of the labor involved in testing many values of t f , A, and n for several possible sets of upper-bound
+and lower-bound data points. A few of the predictions made at increasingly later times are shown in figure 8, set 3.
+23
+
+0.001 0.001
+
+0.01 0.05 0.1
+
+0.5 1.0
+
+5 10
+
+50 100
+
+TIME TO MAIN SHOCK FROM LAST DATA USED FOR PREDICTION (DAYS)
+
+FIGURE 8. Summary of predictions of main-shock times from analysis of foreshock sequences of 10 different earthquakes in which the error of prediction is plotted versus the time remaining from the last data used. Circles indicate use of equation CO (E/E), squares of equation (5), d/dt(\u00a3/E); barbs on symbols indicate prediction is later than main-shock time, and lines connect predictions of the same event made at various times. Numbers refer to earthquakes discussed in the text. Lines A, B, and C refer, respectively, to the ratio (error to time remaining) having values of 1.0, 0.1, and 0.01.
+
+9.0
+8.5
+CC LJJ
+LU 8.0 H
+(D Q
+7.5
+
+EASTERN SHIMANE
+
+Proposed Mp=3.75
+
+y930
+
+i
+
+Parallel to 17B-21B
+
+** /
+
+24=MAIN M L 3.7
+tf=2596
+
+'91 23
+
+7.0-
+
+Aftershocks of M3.9 at t=1363
+
+1500
+
+2000
+
+TIME (MINUTES)
+
+2500
+
+FIGURE 9. Log E/E versus time plot of the sequence preceding the eastern Shimane, Japan, earthquake of May 27, 1978, M=3.7.
+
+25
+
+1000r M L 3.7'
+100-
+QC LLJ
+
+EASTERN SHIMANE MAY 27, 1978
+\\ \\ \\ \\ \\
+'\\ -^2322 v x Y^ \V
+* \\14 X
+
+LO
+10-
+
+\\\\ V2\\h \\\\
+0
+!//? i I Aftershocks of ^> previous [ML 3.9 May 26
+
+< >5J
+1|
+0 100 1000 10000
+(tfp-t) IN MINUTES
+
+PREDICTED tfp = 2581
+
+ACTUAL tf = 2596
+
+TIME ZERO=OOHR 00 MIN MAY 26, 1978
+
+FIGURE 10. Plot of log(\u00a3/E-5) versus log (t\"IP-t~) of the foreshocks preceding
+the eastern Shimane earthquake of May 27, 1978. The lower-bound points used for analysis are indicated by arrows.
+
+26
+
+Fourth is the Oaxaca, Mexico, earthquake of November 29, 1978, M=7.8, which was analyzed using data from Ponce et al. (1980a, b) and from PDE (Preliminary Determination of Epicenters). The area considered in Ponce et al. (1980a), shown by a light rectangle oriented N-S in figure 11, was somewhat enlarged and reoriented into a rectangle, parallel with the offshore trench, that included all the M\u00a32.8 foreshocks reported by Ponce et al. (1980b) which were detected by the local net emplaced in early November 1978. The area also includes seven previous events, M^3\u00ab9, reported in PDE between January 1 and November 9, 1978. During the period from August 29 (event F) to November 9, 1978 (no. 1 of local net), no shocks were reported in PDE within the area being considered. When the recording of seismicity with the local net was begun in November, the rate of energy release was that which would have been predicted by extrapolation of the rate of energy release of the early PDE data, although an apparent quiet period of 72 days intervened.
+The value of Z/E shown by the local net in the plot of figure 11 is lower than would be expected by extrapolation of the Z/E curve C-E-F. This information suggests that damage might have continued after event F, resulting in a high rate when the local net began recording, but that seismicity was absent or at levels of M<3.9 during the interval between events F and 1. A similar hiatus in Z/E occurred later in the sequence between events 38 and 39 of the local net sequence (figures 12 and 13). This hiatus clearly indicates that something happened between events 38 and 39 which escaped detection by a sensitive net but which led to high rates at the proper time. Although these gaps in the continuity of Z/E made it impossible to use Z/E for analysis of the Oaxaca sequence, rates could be used.
+Figure 14 shows the relation between the log of remaining time, (t-,f,p-t-), versus the log rate. The intervals used for computing rates are indicated by event numbers. Rates determined from the PDE events C-E and E-F extrapolate well to the rate from local net events 1-14, yielding the projected time of main shock of 478,000 by repeated regression of equation (5) until the maximum r_ was obtained. Following event 14, a period of change or transition appeared to exist until event 26 when another set of rate determinations fell on a line with somewhat less slope and yielded \"t,I,B =480,040.
+Figure 8, set 4, shows an early prediction using Z/E data only from PDE, a later one using rates from both PDE and the local net, and a still later prediction using rate data from the local net only.
+Fifth, the foreshocks of the Petatlan, Mexico, earthquake of March 14, 1979. Ms=7.6, were analyzed using data from Gettrust et al. (1981), Hsu et al. (1983), and an updated computer printout furnished by Professor Hsu. The predictions are in two groups in figure 8; those numbered 5 were made using data as early as March 2, and those numbered 5a were made using data from March 13 and 1 4.
+27
+
+Ms 7.8 30
+
+20
+c/) (D DC
+\u00b0LbU
+
+H 10
+
+100 DAYS
+
+0 0 500
+TIME IN 10J MIN OAXACA, MEXICO
+NOV. 29, 1978
+FIGURE 11. Data concerning the Oaxaca, Mexico, earthquake of November 29, 1978. (a) Area of light rectangle considered by Ponce et al. O980a) showing locations of some of the foreshocks and aftershocks and the area within double lines used for the present analysis, (b) Plot of I/E versus time for the 11 months preceding the main shock.
+28
+
+30 OAXACA, MEXICO NOV. 29, 1978
+CO
+25
+LU
+20 h
+450 460 470 480 TIME IN103 MIN
+FIGURE 12. Plot of E/E versus _t derived from the records of the local net during November 1978 prior to the Oaxaca earthquake of November 29, M=7.8.
+29
+
+OAXACA, MEXICO NOV. 29, 1978
+4.45
+
+C/)
+occ. 43
+\"LbU
+HI
+37
+
+4.40 33
+
+2 DAYS
+
+475 480 TIME IN 10 MIN
+FIGURE 13. Plot of log Z/E versus time for the last part of the foreshock sequence of the Oaxaca, Mexico, earthquake of November 29, 1978.
+
+30
+
+OAXACA, MEXICO NOV. 29, 1978
+5.5
+5.0 ,=478,000
+
+4.5
+
+V 4.0
+CL
+9 3.5
+3.0
+
+26-30 33-37
+tfp=480,040
+
+40B-43B1
+
+2.5 ACTUAL tf=480,713
+
+2.0 -1.5 -1.0 -0.5 0.0 0.5
+LOG [RATE IN io6 ERGS ^/MIN]
+
+1.0
+
+FIGURE 1*1. Plot of log(t~.\u00a3B-t~) versus log rate of E/E for the foreshock
+sequence preceding the Oaxaca, Mexico, earthquake of November 29, 1978, Ms=7.7.
+
+31
+
+Sixth, the foreshock sequence of the Oroville, California, earthquake of August 1, 1965, MLI=5.7, discussed by Mantis et al. (1979), was the longest such sequence then known in California. It consisted of many small shocks that were spaced irregularly over a period of 56 days, dominated by two moderate shocks of ML=I 4.5, one 233 minutes before the main shock and the other 8 seconds before. Back-analysis indicated that the first MLI =4.5 shock, numbered 6a on figure 8, could be predicted with difficulty. The main shock, number 6, was not predictable with satisfactory accuracy, and I regard the analysis of the Oroville series as a partial failure.
+Seventh is the Yenyuan-Ninglang, Southwest China, earthquake of November 11, 1976, M=6.9, reported on by Dike (1978). This event was preceded by more than 40 foreshocks in a period of approximately 25 days. Essentially straight and nearly parallel upper and lower bounds confine the log \u00a3/E versus time plot until the lower bound is crossed during prolonged quiescence. The main shock, M=6.9, followed shortly thereafter; the magnitude was much higher than the M=5.4 that might be predicted from projection of the upper bound.
+Eighth, an earthquake on June 14, 1978, W=5.4, in the Himachal Himalayas, India, was the second of two events discussed by Das Gupta (1984). It was preceded by 25 foreshocks over a period of approximately 151 days. Activity decreased markedly about 40 days prior to the main shock, which is why no predictions were made later.
+The ninth is the earthquake of February 14, 1980, off the north coast of the Virgin Islands. This earthquake was preceded by 36 foreshocks, 1.4SMS2.5, during the previous 10 months (Frankel, 1982). The sequence appears to have consisted of four episodes, each terminated by a short period of increased activity. The duration of the episodes decreased with the passage of time in an accurate linear relation. The last episode, or miniseries, was used to make the predictions shown in figure 8.
+Tenth is an earthquake on April 15, 1979, Ms=7.1, that occurred near the southwest coast of Yugoslavia. This earthquake was preceded by a series of foreshocks, which started on April 9 and had magnitudes as great as 5.4 (Karakaisis et al., 1985). The time and magnitudes of the six foreshocks were reported in the publication. Of these, the first five could be used, giving a bare minimum for a prediction of t f using means of upper- and lower-bound
+rates. Events 3, 4, and 5 were used for a prediction based on Z/E. As sometimes happens in regressions of this type, using only three points to search for the best -t,f.E resulted in r =1 .
+Eleventh is the great earthquake of March 3, 1985, Ms=7.8, that occurred along the coast of central Chile. This event was preceded by intense foreshock activity near the epicenter of the main shock for 11 days before the main shock (Comte et al., 1986). A list of foreshocks between February 10 and 27, Mh=4.0, was kindly furnished by Professor E. Kausel and D. Comte of the
+University of Chile, Santiago, for analysis. A period of relative quiescence began on February 23, and no foreshocks of m \u00a34.0 occurred from late on
+February 27 to the main shock late on March \u00a7 Preliminary results of analysis of data prior to quiescence indicate that the times of possible main
+32
+
+shock could be predicted from lower-bound rates and from E/E, as shown in figure 8, although predicted times are significantly earlier than the time of the actual earthquake.
+
+SYNTHETIC FORESHOCK SERIES CONTROLLED BY INPORT SERF
+
+If INPORT SERF has some physical validity, it should also have discernible connections with other empirical but established characteristics of foreshock sequences. One possible test is to generate a series of foreshocks in which the upper bound of energy release is determined by an equation of the INPORT SERF form and then to examine the distribution of resulting magnitudes. It is also necessary to specify the distribution of the foreshocks in time. For the current analysis, a series of shocks spaced at equal time intervals is assumed; other distributions, such as shocks spaced at random times or shocks spaced with increasing frequency as the main shock is approached, are under study.
+
+As an example, the following relation n
+d(E/E)/dt=W(100-t) .
+
+(36)
+
+is assumed, the first shock at t_=0 is given a /E value of 1, and each succeeding shock is specified to occur at equal time intervals of _t=10, 20, 30 . . .. The resulting step-like time-E/E relation in figure 15 shows that the successive shocks, indicated by heavy lines, progressively increase in size. The magnitude of each shock can be calculated by the energy release necessary to make each shock reach the curve defined by the integral of equation 36, which is:
+
+E/E+7=80/(100-t)\u00b0* 5 .
+
+(37)
+
+To investigate the resulting distribution of magnitudes, a similar curve was generated with C=20 rather than 40, and with shocks at equal time intervals, _t=1, 2, 3. The size of each of the 99 shocks was calculated by the AE that accrued in each time interval. The AE was multiplied by 10 to produce numbers (in ergs) that yield familiar values for the magnitude, M. The resulting magnitudes were plotted in a Gutenberg-Richter diagram of log _N versus M_, where N_ is the number of shocks having a magnitude equal to or greater than the corresponding tl. Four such plots made for n_=1 , 1.5, 2, and 3 are nearly linear, especially in the range 1O^N^99 (figure 16). The leastsquares best-fit lines of regression in this range all have linear correlation coefficients of -0.9999+. The slopes of the lines yield _b values in the Gutenberg-Richter relation
+
+log N=a-bM ;
+
+(38)
+
+which, if plotted against the n. values of the corresponding graphs on double logarithmic scales, yield a linear relation with a slope of -1.000 given in
+
+33
+
+SYNTHETIC SEISMIC SERIES 70
+40 60 eft (100-t) 1 -5
+,_ 80 50
+= 1 at t = 0 40 tf = 100
+W 30
+20
+10
+00 10 20 30 40 50 60 70 80 90 100
+TIME
+FIGURE 15. Synthetic seismic series in which the cumulated energy release is constrained to follow an INPORT SERF relation. Shocks, indicated by heavy lines, are assumed to occur at equal time intervals.
+
+equation (39): log b=-log n-.11727 ,
+or _b times n=1.31, a constant.
+
+(39)
+
+This close relation between the Gutenberg-Richter _b and the INPORT SERF exponent ri, although presented here only for a synthetic series of shocks spaced at equal time intervals, suggests an underlying physical link between equation (1) and real foreshock processes.
+
+DISCUSSION AND CONCLUSIONS
+
+A difficulty likely to affect other users of the method is the search for the highest coefficient of determination, r_ , when both A and the predicted t-,I,E are varied in linear regression of the relation
+log(E/E+A) versus log(t f -t). Much of the arithmetic drudgery can probably be
+eliminated by computer programs. The critical exercise of judgment remains, however, in selecting the areas and time periods to investigate and, as data accumulate, in choosing points used to define the upper or lower bounds and revising the selection as time goes on. Perhaps these operations could be aided by standardizing procedures and criteria for decisions and by using interactive computer graphics. During analysis, I found that using, say, five or six pairs of data might yield a more accurate prediction than working with three or four pairs of data that have a higher r_ ; that is, use of additional data points perhaps should carry a greater weight than a higher coefficient of determination obtained using fewer pairs.
+
+Research is needed not only to firmly establish the predictive usefulness of the method but also to follow up some of the unexpected relations that the analyses revealed. For example, several foreshock sequences seem composed of a succession of episodes, or miniseries, that are spaced uniformly in time (Yenyuan-Ninglang) or at intervals which decrease with strict linearity in time (Virgin Islands). The analysis of a series of earthquakes that were regarded as foreshocks at the time but were not followed by a large event is also needed. The forms of the graphs used in analysis might show some systematic variation with the geologic structures involved.
+
+Connections between rate-process theory, continuum damage mechanics, and the progressive release of energy during precursory seismic activity need further development, using, for instance, the tools of thermodynamics to build a theoretical foundation for the current empirical relations. Meanwhile, INPORT SERF back-analyses yield results that warrant close attention and testing by other investigators.
+
+35
+
+100-
+=1 =.763 50-
+
+20-
+N>M
+10-
+5n
+
+2- dt (100-t) n x b=constant, 0.763
+
+o ooo
+
+-4 -3 -2 -1 0 1
+
+I
+3
+
+M
+
+FIGURE 16. Gutenberg-Richter plot of log j[ versus magnitude for four synthetic foreshock series whose energy release follows an IMPORT SERF relation for various values of ru The product of the Gutenberg-Richter b value times n is a constant.
+
+36
+
+Acknowledgments. I thank Vindell Hsu for furnishing updated hypocenter parameters for the late part of the Petatlan, Mexico, earthquake foreshock sequence. Edgar Kausel and D. Comte provided similar data for the March 3, 1985, Chilean earthquake. William Z. Savage, Charles Bufe, Geoffrey King, and Stuart Nishenko made helpful reviews. William K. Smith developed a computer program applicable to adjustable variable linear regression. The author has benefited from discussions with J. R. Filson, Gu Jicheng, L. M. Jones, C. Lomnitz, K. Mogi, T. Rikitake, A. M. Rogers, W. J. Spence, R. E. Wallace, Xu Shaoxie, and from critiques of an earlier short version by W. H. Bakun, J. H. Dieterich, D. Oppenheimer, R. A. Page, and P. Reasenberg.
+REFERENCES
+Anderson, O.L., and Grew, P.C., 1977, Stress corrosion theory of crack propagation with applications to geophysics: Reviews of Geophysical Space Physics, v. 15, no. 1, p. 77-104.
+Ashby, M.F., and Dyson, B.F. 1986, Creep damage mechanics and micromechanisms: Pergamon Press, Advances in Fracture Research (Fracture 84), v. 1, p. 3-30.
+Benioff, V.H., 1951, Creep characteristics of rocks and the origin of aftershocks, pt. I of Earthquakes and rock creep: Seismological Society of America Bulletin, v. 41, no. 1, p. 31-62.
+Comninakis, P.E., Drakopoulos, J.C., Moumoulidis, G., and Papazachos, B.C., 1968, Foreshock and aftershock sequences of the Cremasta earthquake and their relation to the waterloading of the Cremasta artificial lake: Annali di Geofisica, v. 21, p. 39-71.
+Comte, D., Eisenberg, A. ? Lorca, E., Pardo, M., Ponce, L., Saragoni, R., Singh, S.K., and Suarez, G., 1986, The 1985 central Chile earthquake A repeat of previous great earthquakes in the region?: Science, v. 233f p. 449-453.
+Das Gupta, A., 1984, Observed amplitude changes and seismic activity prior to two recent earthquakes in the Himachal Himalayas, India: Tectonophysics, v. 104, p. 375-386.
+Endo, E.T., Malone, S.D., Noson, L.L., and Weaver, C.S., 1981, Locations, magnitudes, and statistics of the March 20-May 18 earthquake sequence, in Lipman, P.W., and Mullineaux, D.R., eds., The 1980 Eruptions of Mount St. Helens, Washington: U.S. Geological Survey Professional Paper 1250, p. 93-121.
+Frankel, Arthur, 1982, Precursors to a magnitude 4.8 earthquake in the Virgin Islands Spatial clustering of small earthquakes, anomalous focal mechanisms, and earthquake doublets: Seismological Society of America Bulletin, v. 72, p. 1277-1294.
+Gettrust, J.F., Hsu, V., Helsley, C.E., Herrero, E., and Jordan, T., 1981, Patterns of local seismicity preceding the Petatlan earthquake of 1 4 March 1979: Seismological Society of America Bulletin, v. 71, no. 3, p. 761-769.
+Glasstone, S., Laidler, K.J., and Eyring, H., 1941, Theory of rate processes Kinetics of chemical reactions, viscosity, diffusion, and electrochemical phenomena: New York, McGraw-Hill, 611 p.
+Gupta, H.K., Rastogi, B.K., and Narain, Hari, 1972, Common features of the reservoir-associated seismic activities: Seismological Society of America, v. 62, p. 481-492.
+37
+
+Hsu, V., Gettrust, J.F., Helsley, C.E., and Berg, E., 1983, Local seismicity preceding the March 1 M, 1979, Petatlan, Mexico earthquake (Ms=7.6); Journal ofGeophysical Research, v. 88, p. M2M7-M262.
+Jones, L.M., and Molnar, P., 1979, Some characteristics of foreshocks and their possible relationship to earthquake prediction and premonitory slip on faults: Journal of Geophysical Research, v. 8M, p. 3596-3608.
+Jones, L.M., Wang, B., Xu, S., and Fitch, T.J., 1982, The foreshock sequence of the February 4, 1975, Haicheng earthquake (M=7.3): Journal of Geophysical Research, y. 87, p. 4575-M58M.
+Karakaisis, G.F., Karacostas, B.G., Papadimitriov, E.E., and Papazachos, B.C., 1985, Properties of the 1979 Monte Negro (Southwest Yugoslavia) seismic sequence: Pure and Applied Geophysics, v. 122, p. 25~35.
+Kranz, R.L., Harris, W.J., and Carter, N.L., 1982, Static fatigue of granite at 200\u00b0 C: Geophysical Research Letters, v. 9, p. 1~M.
+Krausz, A.S., and Eyring, H., 1975, Deformation kinetics: New York, John Wiley, 398 p.
+Leckie, F.A., and Hayhurst, D.R., 1977, Constitutive equations for creep rupture, Acta Metallurgica, v. 25, p. 1059-1070.
+Malone, S.D., Boyko, Christina, and Weaver, C.S., 1983, Deformation monitoring at Mount St. Helens in 1981 and 1982: Science, v. 221, p. 1376-1378.
+Mantis, C., Lindh, A., Savage, W., and Marks, S., 1979, Catalog of Oroville, California, earthquakes, June 7, 1975, to July 31, 1976: U.S. Geological Survey Open-File Report 79-932, 136 p.
+Monkman, F.C., and Grant, N.J., 1956, An empirical relationship between rupture life and minimum creep rate in creep-rupture tests: Proceedings of American Society for Testing and Materials, v. 56, p. 593-605.
+Murayama, S., and Shibata, T., 1958, On the rheological characters of clay, pt. I: Bulletin of the Disaster Prevention Research Institute, Kyoto, Japan, v. 26, p. 1-43.
+Oike, K., 1978, Precursory phenomena and prediction of recent large earthquakes in China: Chinese Geophysics, v. 1, p. 179-199.
+Papazachos, B.C., 1973, The time distribution of the reservoir-associated foreshocks and its importance to the prediction of the principal shock: Seismological Society of America Bulletin, v. 63, p. 1973-1978.
+Ponce, L., McNally, K.C., Gonzalez, J., del Castillo, A., and Chael, E.P., 1980a, The 29 November 1978, Oaxaca earthquake Foreshock activity: Geofisica Internacional, v. 17, no. 3, p. 267-280.
+Ponce, L., McNally, K.C., de Portilla, V.S., Gonzalez, J., del Castillo, A., Gonzalez, L., Chael, E., and French, M., 1980b, Oaxaca, Mexico, earthquake of 29 November 1978 A preliminary report on spatio-temporal pattern of preceding seismic activity and mainshock relocation: Geofisica Internacional, v. 17, no. 2, p. 109-126.
+Raleigh, C.B., et al., 1977, Prediction of the Haicheng earthquake: EOS, Transactions of the American Geophysical Union, v. 58, p. 236-272.
+Saito, M., 1969, Forecasting time of slope failure by tertiary creep: Proceedings of the 7th International Conference on Soil Mechanics and Foundation Engineering, v. 2, p. 677-683.
+Scholz, C.H., 1972, Static fatigue of quartz: Journal of Geophysical Research, v. 77, p. 210M-211M.
+Servi, I.S., and Grant, N.J., 1951, Creep and stress rupture behavior of aluminum as a function of purity: Transactions of the American Institute of Mining and Metallurgical Engineers, v. 191, p. 909-916.
+38
+
+Swanson, D.A., Casadevall, T.J., Dzurisin, D., Holcomb, R.T., Newhall, C.G., Malone, S.D., and Weaver, C.S., 1985, Forecasts and predictions of eruptive activity at Mount St. Helens, USA 1975-1984: Journal of Geodynamics, v. 3, p. 397-423.
+Tokarev, P.I., 1963, On a possibility of forecasting of Bezymianny volcano eruptions according to seismic data: Bulletin of Volcanology, v. 26, p. 379-386.
+Tokarev, P.I., 1972, Forecasting volcanic eruptions from seismic data: Bulletin of Volcanology, v. 35, p. 243-250.
+Tokarev, P.I., 1985, The prediction of large explosions of andesitic volcanoes: Journal of Geodynamics, v. 3\u00bb p. 219-244.
+Tomashevskaya, I.S., 1985, Change of various physical parameters during straining and fracturing of rock specimens, in Sadovskii, M.A., ed., Physics of the Earthquake Focus: Academy of Science, USSR (translated from Russian), p. 134-144. Meeting in Amerind, New Delhi.
+Varnes, D.J., 1983, Time-deformation relations in creep to failure of earth materials: Proceedings of the 7th Southeast Asian Geotechnical Conference, v. 2, p. 107-130.
+Wu, F.T., and Thomsen, L., 1975, Microfracturing and deformation of Westerly granite under creep condition: International Journal of Rock Mechanics and Mining Sciences, and Geomechanics Abstracts, v. 12, p. 167-173.
+Yamashina, K., and Miura, R., 1980, The M=3.9 earthquake sequence of May 1978 in eastern Shimane, Japan: Bulletin of the Earthquake Research Institute, v. 55, p. 621-633.
+Zhurkov, S.N., 1965, Kinetic concept of the strength of solids: International Journal of Fracture Mechanics, v. 1, p. 311-323.
+39
+
+",

@@ -1,0 +1,451 @@
+{
+  "name" : "557b82c9e138239225f86468_input.pdf",
+  "metadata" : {
+    "source" : "CRF",
+    "title" : "DEPARTMENT OF THE INTERIOR U.S. GEOLOGICAL SURVEY Foreshock Seismic-Energy-Release Functions: Tools for Estimating Time and Magnitude of Main Shocks",
+    "authors" : [ "David J. Varnes" ],
+    "emails" : [ ],
+    "sections" : null,
+    "references" : [ {
+      "title" : "Stress corrosion theory of crack propagation with applications to geophysics: Reviews of Geophysical Space Physics",
+      "author" : [ "O.L. Anderson", "P.C. Grew" ],
+      "venue" : "v. 15,",
+      "citeRegEx" : "Anderson and Grew,? \\Q1977\\E",
+      "shortCiteRegEx" : "Anderson and Grew",
+      "year" : 1977
+    }, {
+      "title" : "Creep damage mechanics and micromechanisms: Pergamon Press, Advances in Fracture",
+      "author" : [ "M.F. Ashby", "B.F. Dyson" ],
+      "venue" : "Research (Fracture 84),",
+      "citeRegEx" : "Ashby and Dyson,? \\Q1986\\E",
+      "shortCiteRegEx" : "Ashby and Dyson",
+      "year" : 1986
+    }, {
+      "title" : "Foreshock and aftershock sequences of the Cremasta earthquake and their relation to the waterloading of the Cremasta artificial lake",
+      "author" : [ "P.E. Comninakis", "J.C. Drakopoulos", "G. Moumoulidis", "B.C. Papazachos" ],
+      "venue" : "Annali di Geofisica,",
+      "citeRegEx" : "Comninakis et al\\.,? \\Q1968\\E",
+      "shortCiteRegEx" : "Comninakis et al\\.",
+      "year" : 1968
+    }, {
+      "title" : "The 1985 central Chile earthquake A repeat of previous great earthquakes in the region?",
+      "author" : [ "D. Comte", "Eisenberg", "E.A. ? Lorca", "M. Pardo", "L. Ponce", "R. Saragoni", "S.K. Singh", "G. Suarez" ],
+      "venue" : null,
+      "citeRegEx" : "Comte et al\\.,? \\Q1986\\E",
+      "shortCiteRegEx" : "Comte et al\\.",
+      "year" : 1986
+    }, {
+      "title" : "Observed amplitude changes and seismic activity prior to two recent earthquakes in the Himachal Himalayas, India: Tectonophysics",
+      "author" : [ "A. Das Gupta" ],
+      "venue" : "v. 104,",
+      "citeRegEx" : "Gupta,? \\Q1984\\E",
+      "shortCiteRegEx" : "Gupta",
+      "year" : 1984
+    }, {
+      "title" : "Locations, magnitudes, and statistics of the March 20-May 18 earthquake",
+      "author" : [ "E.T. Endo", "S.D. Malone", "L.L. Noson", "C.S. Weaver" ],
+      "venue" : "The 1980 Eruptions of Mount St. Helens, Washington: U.S. Geological Survey Professional Paper 1250,",
+      "citeRegEx" : "Endo et al\\.,? \\Q1981\\E",
+      "shortCiteRegEx" : "Endo et al\\.",
+      "year" : 1981
+    }, {
+      "title" : "Precursors to a magnitude 4.8 earthquake in the Virgin Islands Spatial clustering of small earthquakes, anomalous focal mechanisms, and earthquake doublets",
+      "author" : [ "Frankel", "Arthur" ],
+      "venue" : "Seismological Society of America Bulletin,",
+      "citeRegEx" : "Frankel and Arthur,? \\Q1982\\E",
+      "shortCiteRegEx" : "Frankel and Arthur",
+      "year" : 1982
+    }, {
+      "title" : "Patterns of local seismicity preceding the Petatlan earthquake of 1 4 March 1979",
+      "author" : [ "J.F. Gettrust", "V. Hsu", "C.E. Helsley", "E. Herrero", "T. Jordan" ],
+      "venue" : "Seismological Society of America Bulletin, v. 71,",
+      "citeRegEx" : "Gettrust et al\\.,? \\Q1981\\E",
+      "shortCiteRegEx" : "Gettrust et al\\.",
+      "year" : 1981
+    }, {
+      "title" : "Theory of rate processes Kinetics of chemical reactions, viscosity, diffusion, and electrochemical phenomena",
+      "author" : [ "S. Glasstone", "K.J. Laidler", "H. Eyring" ],
+      "venue" : null,
+      "citeRegEx" : "Glasstone et al\\.,? \\Q1941\\E",
+      "shortCiteRegEx" : "Glasstone et al\\.",
+      "year" : 1941
+    }, {
+      "title" : "Common features of the reservoir-associated seismic activities: Seismological",
+      "author" : [ "H.K. Gupta", "B.K. Rastogi", "Narain", "Hari" ],
+      "venue" : "Society of America, v",
+      "citeRegEx" : "Gupta et al\\.,? \\Q1972\\E",
+      "shortCiteRegEx" : "Gupta et al\\.",
+      "year" : 1972
+    }, {
+      "title" : "Local seismicity preceding the March 1 M, 1979, Petatlan, Mexico earthquake",
+      "author" : [ "V. Hsu", "J.F. Gettrust", "C.E. Helsley", "E. Berg" ],
+      "venue" : "Journal ofGeophysical Research,",
+      "citeRegEx" : "Hsu et al\\.,? \\Q1983\\E",
+      "shortCiteRegEx" : "Hsu et al\\.",
+      "year" : 1983
+    }, {
+      "title" : "Some characteristics of foreshocks and their possible relationship to earthquake prediction and premonitory slip on faults",
+      "author" : [ "L.M. Jones", "P. Molnar" ],
+      "venue" : "Journal of Geophysical Research, v",
+      "citeRegEx" : "Jones and Molnar,? \\Q1979\\E",
+      "shortCiteRegEx" : "Jones and Molnar",
+      "year" : 1979
+    }, {
+      "title" : "The foreshock sequence of the February 4, 1975, Haicheng earthquake",
+      "author" : [ "L.M. Jones", "B. Wang", "S. Xu", "T.J. Fitch" ],
+      "venue" : "Journal of Geophysical Research,",
+      "citeRegEx" : "Jones et al\\.,? \\Q1982\\E",
+      "shortCiteRegEx" : "Jones et al\\.",
+      "year" : 1982
+    }, {
+      "title" : "Properties of the 1979 Monte Negro (Southwest Yugoslavia) seismic sequence",
+      "author" : [ "G.F. Karakaisis", "B.G. Karacostas", "E.E. Papadimitriov", "B.C. Papazachos" ],
+      "venue" : "Pure and Applied Geophysics,",
+      "citeRegEx" : "Karakaisis et al\\.,? \\Q1985\\E",
+      "shortCiteRegEx" : "Karakaisis et al\\.",
+      "year" : 1985
+    }, {
+      "title" : "Static fatigue of granite at 200°",
+      "author" : [ "R.L. Kranz", "W.J. Harris", "N.L. Carter" ],
+      "venue" : "C: Geophysical Research Letters,",
+      "citeRegEx" : "Kranz et al\\.,? \\Q1982\\E",
+      "shortCiteRegEx" : "Kranz et al\\.",
+      "year" : 1982
+    }, {
+      "title" : "Deformation kinetics",
+      "author" : [ "A.S. Krausz", "H. Eyring" ],
+      "venue" : null,
+      "citeRegEx" : "Krausz and Eyring,? \\Q1975\\E",
+      "shortCiteRegEx" : "Krausz and Eyring",
+      "year" : 1975
+    }, {
+      "title" : "Constitutive equations for creep rupture",
+      "author" : [ "F.A. Leckie", "D.R. Hayhurst" ],
+      "venue" : "Acta Metallurgica,",
+      "citeRegEx" : "Leckie and Hayhurst,? \\Q1977\\E",
+      "shortCiteRegEx" : "Leckie and Hayhurst",
+      "year" : 1977
+    }, {
+      "title" : "Deformation monitoring at Mount St",
+      "author" : [ "S.D. Malone", "Boyko", "Christina", "C.S. Weaver" ],
+      "venue" : "Helens in 1981 and 1982: Science,",
+      "citeRegEx" : "Malone et al\\.,? \\Q1983\\E",
+      "shortCiteRegEx" : "Malone et al\\.",
+      "year" : 1983
+    }, {
+      "title" : "Catalog of Oroville, California, earthquakes",
+      "author" : [ "C. Mantis", "A. Lindh", "W. Savage", "S. Marks" ],
+      "venue" : "to July",
+      "citeRegEx" : "Mantis et al\\.,? \\Q1979\\E",
+      "shortCiteRegEx" : "Mantis et al\\.",
+      "year" : 1979
+    }, {
+      "title" : "An empirical relationship between rupture life and minimum creep rate in creep-rupture tests",
+      "author" : [ "F.C. Monkman", "N.J. Grant" ],
+      "venue" : "Proceedings of American Society for Testing and Materials,",
+      "citeRegEx" : "Monkman and Grant,? \\Q1956\\E",
+      "shortCiteRegEx" : "Monkman and Grant",
+      "year" : 1956
+    }, {
+      "title" : "On the rheological characters of clay, pt. I: Bulletin of the Disaster Prevention",
+      "author" : [ "S. Murayama", "T. Shibata" ],
+      "venue" : "Research Institute, Kyoto, Japan,",
+      "citeRegEx" : "Murayama and Shibata,? \\Q1958\\E",
+      "shortCiteRegEx" : "Murayama and Shibata",
+      "year" : 1958
+    }, {
+      "title" : "Precursory phenomena and prediction of recent large earthquakes in China: Chinese Geophysics, v",
+      "author" : [ "K. Oike" ],
+      "venue" : null,
+      "citeRegEx" : "Oike,? \\Q1978\\E",
+      "shortCiteRegEx" : "Oike",
+      "year" : 1978
+    }, {
+      "title" : "The time distribution of the reservoir-associated foreshocks and its importance to the prediction of the principal shock",
+      "author" : [ "B.C. Papazachos" ],
+      "venue" : "Seismological Society of America Bulletin,",
+      "citeRegEx" : "Papazachos,? \\Q1973\\E",
+      "shortCiteRegEx" : "Papazachos",
+      "year" : 1973
+    }, {
+      "title" : "1980a, The 29 November 1978, Oaxaca earthquake Foreshock activity: Geofisica Internacional",
+      "author" : [ "L. Ponce", "K.C. McNally", "J. Gonzalez", "A. del Castillo", "E.P. Chael" ],
+      "venue" : "v. 17,",
+      "citeRegEx" : "Ponce et al\\.,? \\Q1978\\E",
+      "shortCiteRegEx" : "Ponce et al\\.",
+      "year" : 1978
+    }, {
+      "title" : "1980b, Oaxaca, Mexico, earthquake",
+      "author" : [ "L. Ponce", "K.C. McNally", "V.S. de Portilla", "J. Gonzalez", "A. del Castillo", "L. Gonzalez", "E. Chael", "M. French" ],
+      "venue" : "Geofisica Internacional, v. 17,",
+      "citeRegEx" : "Ponce et al\\.,? \\Q1978\\E",
+      "shortCiteRegEx" : "Ponce et al\\.",
+      "year" : 1978
+    }, {
+      "title" : "Prediction of the Haicheng earthquake: EOS",
+      "author" : [ "Raleigh", "C.B" ],
+      "venue" : "Transactions of the American Geophysical Union, v",
+      "citeRegEx" : "Raleigh and C.B,? \\Q1977\\E",
+      "shortCiteRegEx" : "Raleigh and C.B",
+      "year" : 1977
+    }, {
+      "title" : "Forecasting time of slope failure by tertiary creep",
+      "author" : [ "M. Saito" ],
+      "venue" : "Proceedings of the 7th International Conference on Soil Mechanics and Foundation Engineering,",
+      "citeRegEx" : "Saito,? \\Q1969\\E",
+      "shortCiteRegEx" : "Saito",
+      "year" : 1969
+    }, {
+      "title" : "Static fatigue of quartz",
+      "author" : [ "C.H. Scholz" ],
+      "venue" : "Journal of Geophysical Research,",
+      "citeRegEx" : "Scholz,? \\Q1972\\E",
+      "shortCiteRegEx" : "Scholz",
+      "year" : 1972
+    }, {
+      "title" : "Creep and stress rupture behavior of aluminum as a function of purity",
+      "author" : [ "I.S. Servi", "N.J. Grant" ],
+      "venue" : "Transactions of the American Institute of Mining and Metallurgical Engineers,",
+      "citeRegEx" : "Servi and Grant,? \\Q1951\\E",
+      "shortCiteRegEx" : "Servi and Grant",
+      "year" : 1951
+    }, {
+      "title" : "Forecasts and predictions of eruptive activity at Mount St. Helens, USA 1975-1984",
+      "author" : [ "D.A. Swanson", "T.J. Casadevall", "D. Dzurisin", "R.T. Holcomb", "C.G. Newhall", "S.D. Malone", "C.S. Weaver" ],
+      "venue" : "Journal of Geodynamics,",
+      "citeRegEx" : "Swanson et al\\.,? \\Q1985\\E",
+      "shortCiteRegEx" : "Swanson et al\\.",
+      "year" : 1985
+    }, {
+      "title" : "On a possibility of forecasting of Bezymianny volcano eruptions according to seismic data: Bulletin of Volcanology",
+      "author" : [ "P.I. Tokarev" ],
+      "venue" : "v. 26,",
+      "citeRegEx" : "Tokarev,? \\Q1963\\E",
+      "shortCiteRegEx" : "Tokarev",
+      "year" : 1963
+    }, {
+      "title" : "Forecasting volcanic eruptions from seismic data: Bulletin of Volcanology",
+      "author" : [ "P.I. Tokarev" ],
+      "venue" : "v. 35,",
+      "citeRegEx" : "Tokarev,? \\Q1972\\E",
+      "shortCiteRegEx" : "Tokarev",
+      "year" : 1972
+    }, {
+      "title" : "The prediction of large explosions of andesitic volcanoes",
+      "author" : [ "P.I. Tokarev" ],
+      "venue" : "Journal of Geodynamics, v",
+      "citeRegEx" : "Tokarev,? \\Q1985\\E",
+      "shortCiteRegEx" : "Tokarev",
+      "year" : 1985
+    }, {
+      "title" : "Change of various physical parameters during straining and fracturing of rock specimens, in Sadovskii",
+      "author" : [ "I.S. Tomashevskaya" ],
+      "venue" : "M.A., ed., Physics of the Earthquake Focus: Academy of Science, USSR (translated from Russian),",
+      "citeRegEx" : "Tomashevskaya,? \\Q1985\\E",
+      "shortCiteRegEx" : "Tomashevskaya",
+      "year" : 1985
+    }, {
+      "title" : "Time-deformation relations in creep to failure of earth materials",
+      "author" : [ "D.J. Varnes" ],
+      "venue" : "Proceedings of the 7th Southeast Asian Geotechnical Conference,",
+      "citeRegEx" : "Varnes,? \\Q1983\\E",
+      "shortCiteRegEx" : "Varnes",
+      "year" : 1983
+    }, {
+      "title" : "Microfracturing and deformation of Westerly granite under creep condition: International Journal of Rock Mechanics and Mining Sciences, and Geomechanics",
+      "author" : [ "F.T. Wu", "L. Thomsen" ],
+      "venue" : "Abstracts, v",
+      "citeRegEx" : "Wu and Thomsen,? \\Q1975\\E",
+      "shortCiteRegEx" : "Wu and Thomsen",
+      "year" : 1975
+    }, {
+      "title" : "The M=3.9 earthquake sequence of May 1978 in eastern Shimane, Japan: Bulletin of the Earthquake",
+      "author" : [ "K. Yamashina", "R. Miura" ],
+      "venue" : "Research Institute,",
+      "citeRegEx" : "Yamashina and Miura,? \\Q1980\\E",
+      "shortCiteRegEx" : "Yamashina and Miura",
+      "year" : 1980
+    }, {
+      "title" : "Kinetic concept of the strength of solids",
+      "author" : [ "S.N. Zhurkov" ],
+      "venue" : "International Journal of Fracture Mechanics,",
+      "citeRegEx" : "Zhurkov,? \\Q1965\\E",
+      "shortCiteRegEx" : "Zhurkov",
+      "year" : 1965
+    } ],
+    "referenceMentions" : [ {
+      "referenceID" : 27,
+      "context" : "Equation (23) is the same as, or very similar to, equations relating stress to time to failure; remaining time; or lifetime of specimens of quartz in laboratory testing (Scholz, 1972), of rock (Kranz et al.",
+      "startOffset" : 169,
+      "endOffset" : 183
+    }, {
+      "referenceID" : 14,
+      "context" : "Equation (23) is the same as, or very similar to, equations relating stress to time to failure; remaining time; or lifetime of specimens of quartz in laboratory testing (Scholz, 1972), of rock (Kranz et al., 1982; Tomashevskaya, 1985), of samples of clayey soil (Murayama and Shibata, 1958), and of a wide variety of crystalline metallic and nonmetallic and amorphous materials (Zhurkov, 1965).",
+      "startOffset" : 193,
+      "endOffset" : 234
+    }, {
+      "referenceID" : 33,
+      "context" : "Equation (23) is the same as, or very similar to, equations relating stress to time to failure; remaining time; or lifetime of specimens of quartz in laboratory testing (Scholz, 1972), of rock (Kranz et al., 1982; Tomashevskaya, 1985), of samples of clayey soil (Murayama and Shibata, 1958), and of a wide variety of crystalline metallic and nonmetallic and amorphous materials (Zhurkov, 1965).",
+      "startOffset" : 193,
+      "endOffset" : 234
+    }, {
+      "referenceID" : 20,
+      "context" : ", 1982; Tomashevskaya, 1985), of samples of clayey soil (Murayama and Shibata, 1958), and of a wide variety of crystalline metallic and nonmetallic and amorphous materials (Zhurkov, 1965).",
+      "startOffset" : 56,
+      "endOffset" : 84
+    }, {
+      "referenceID" : 37,
+      "context" : ", 1982; Tomashevskaya, 1985), of samples of clayey soil (Murayama and Shibata, 1958), and of a wide variety of crystalline metallic and nonmetallic and amorphous materials (Zhurkov, 1965).",
+      "startOffset" : 172,
+      "endOffset" : 187
+    }, {
+      "referenceID" : 15,
+      "context" : "It is remarkable that the rate-process theory, originally developed to give a physical explanation for viscosity at a molecular level, has been applied successfully in many different ways to vastly larger masses, thermally activated processes of creep and fracture of brittle materials (Krausz and Eyring, 1975), and stress corrosion and crack propagation in the solid earth (Anderson and Grew, 1977).",
+      "startOffset" : 286,
+      "endOffset" : 311
+    }, {
+      "referenceID" : 0,
+      "context" : "It is remarkable that the rate-process theory, originally developed to give a physical explanation for viscosity at a molecular level, has been applied successfully in many different ways to vastly larger masses, thermally activated processes of creep and fracture of brittle materials (Krausz and Eyring, 1975), and stress corrosion and crack propagation in the solid earth (Anderson and Grew, 1977).",
+      "startOffset" : 375,
+      "endOffset" : 400
+    }, {
+      "referenceID" : 11,
+      "context" : "In a paper on characteristics of foreshocks, Jones and Molnar (1979) used a simplified version of Scholz's expression for average lifetime of quartz in uniaxial compression, average(t f-t)=D exp(-aa) , (24) to represent the average life of an asperity on a stressed fault plane.",
+      "startOffset" : 45,
+      "endOffset" : 69
+    }, {
+      "referenceID" : 11,
+      "context" : "In a paper on characteristics of foreshocks, Jones and Molnar (1979) used a simplified version of Scholz's expression for average lifetime of quartz in uniaxial compression, average(t f-t)=D exp(-aa) , (24) to represent the average life of an asperity on a stressed fault plane. As asperities break, the constant exterior stress, a , is carried by fewer and fewer asperities and a decreasing area of contact. The process accelerates and ends in a main shock. Jones and Molnar (1979) use equation (11) and its integral to graph the relations between increasing local stress, aa x> anc* decreasing remaining time during the course of an idealized foreshock sequence and between these variables and the cumulative number of foreshocks.",
+      "startOffset" : 45,
+      "endOffset" : 483
+    }, {
+      "referenceID" : 11,
+      "context" : "The increasing rate in numbers of foreshocks preceding major shocks for collections of data within regions has been shown by Jones and Molnar (1979), as well as Papazachos (1973), to be proportional to an inverse power of remaining time.",
+      "startOffset" : 125,
+      "endOffset" : 149
+    }, {
+      "referenceID" : 11,
+      "context" : "The increasing rate in numbers of foreshocks preceding major shocks for collections of data within regions has been shown by Jones and Molnar (1979), as well as Papazachos (1973), to be proportional to an inverse power of remaining time.",
+      "startOffset" : 125,
+      "endOffset" : 179
+    }, {
+      "referenceID" : 19,
+      "context" : "(26) mm -I After analyzing available data on the rupture life and minimum creep rate of a large number of pure metals and alloys, Monkman and Grant (1956) generalized equation (26) to the following form: 1 log(t,,-t)+- log(e .",
+      "startOffset" : 130,
+      "endOffset" : 155
+    }, {
+      "referenceID" : 26,
+      "context" : "In an analysis of slope failures in Japan, Saito (1969) extended the meaning of the Monkman-Grant expression to the whole of the tertiary creep-tofailure period by assuming the rate at any time in this period is proportional to a power of the remaining time; that is, de C it\" n ' (27) f",
+      "startOffset" : 43,
+      "endOffset" : 56
+    }, {
+      "referenceID" : 34,
+      "context" : "Their work was extended (Varnes, 1983) and shown to apply to a wide variety of materials, including some metals, and, pertinent to the current article, to the emission of acoustic energy in the testing of rock to failure reported by Wu and Thomsen (1975).",
+      "startOffset" : 24,
+      "endOffset" : 38
+    }, {
+      "referenceID" : 15,
+      "context" : "These relations were further developed and generalized to multiaxial states of stress by Leckie and Hayhurst (1977) and to various mechanisms of creep damage by Ashby and Dyson (1986).",
+      "startOffset" : 89,
+      "endOffset" : 116
+    }, {
+      "referenceID" : 1,
+      "context" : "These relations were further developed and generalized to multiaxial states of stress by Leckie and Hayhurst (1977) and to various mechanisms of creep damage by Ashby and Dyson (1986). Continuum damage mechanics has become a very active field of research in many directions, including application to anisotropic polycrystalline materials that develop cavities and cracks under stress.",
+      "startOffset" : 161,
+      "endOffset" : 184
+    }, {
+      "referenceID" : 11,
+      "context" : "The same reasoning was used by Jones and Molnar (1979) in deriving the change in local stress as x increases from 1 to °°, where",
+      "startOffset" : 31,
+      "endOffset" : 55
+    }, {
+      "referenceID" : 30,
+      "context" : "equation (1) is recovered, and it is apparent that Tokarev's expression assumes that n_=2. Tokarev (1972) used the Benioff relation in which cumulative seismic strain is taken to be proportional to cumulative seismic energy.",
+      "startOffset" : 51,
+      "endOffset" : 106
+    }, {
+      "referenceID" : 29,
+      "context" : "Helens in the State of Washington, seismic monitoring and measurement of deformation in the crater area have been used extensively to predict later, smaller eruptions (Swanson et al., 1985).",
+      "startOffset" : 167,
+      "endOffset" : 189
+    }, {
+      "referenceID" : 5,
+      "context" : "Helens (Endo et al., 1981), and plots of Z/E versus time, with an indication of the most likely time of the beginning of an eruption, have been published (Malone et al.",
+      "startOffset" : 7,
+      "endOffset" : 26
+    }, {
+      "referenceID" : 17,
+      "context" : ", 1981), and plots of Z/E versus time, with an indication of the most likely time of the beginning of an eruption, have been published (Malone et al., 1983); however, neither the mathematical form of the curve relating energy and time nor the method of estimating eruption time was given.",
+      "startOffset" : 135,
+      "endOffset" : 156
+    }, {
+      "referenceID" : 2,
+      "context" : "^ (as well as 161 aftershocks) were L reported by Comninakis et al. (l\"968, Table I). The sum of /E of the 20 individual foreshocks has been plotted against time in figure 3 together with a graph of the progressive rise in reservoir elevation as reported by Comninakis et al. (1968) and supplemented by Gupta et al.",
+      "startOffset" : 50,
+      "endOffset" : 283
+    }, {
+      "referenceID" : 2,
+      "context" : "^ (as well as 161 aftershocks) were L reported by Comninakis et al. (l\"968, Table I). The sum of /E of the 20 individual foreshocks has been plotted against time in figure 3 together with a graph of the progressive rise in reservoir elevation as reported by Comninakis et al. (1968) and supplemented by Gupta et al. (1972). In computations involving rates and energy, the energy in ergs was calculated according to the relation logAE=11.",
+      "startOffset" : 50,
+      "endOffset" : 323
+    }, {
+      "referenceID" : 36,
+      "context" : "First is the eastern Shimane, Japan, earthquake of May 27, 1978, M=3«7 (Yamashina and Miura, 1980).",
+      "startOffset" : 71,
+      "endOffset" : 98
+    }, {
+      "referenceID" : 12,
+      "context" : "Seventy-six events were used in the analysis, although the Haicheng event \"was preceded by over 500 foreshocks in the 4 days prior to and very near the epicenter of the mainshock\" (Jones et al., 1982).",
+      "startOffset" : 180,
+      "endOffset" : 200
+    }, {
+      "referenceID" : 12,
+      "context" : "3, which was analyzed using data from the excellent report by Jones et al. (1982) and supplemented with information from the review by Raleigh et al.",
+      "startOffset" : 62,
+      "endOffset" : 82
+    }, {
+      "referenceID" : 12,
+      "context" : "3, which was analyzed using data from the excellent report by Jones et al. (1982) and supplemented with information from the review by Raleigh et al. (1977). Seventy-six events were used in the analysis, although the Haicheng event \"was preceded by over 500 foreshocks in the 4 days prior to and very near the epicenter of the mainshock\" (Jones et al.",
+      "startOffset" : 62,
+      "endOffset" : 157
+    }, {
+      "referenceID" : 23,
+      "context" : "8, which was analyzed using data from Ponce et al. (1980a, b) and from PDE (Preliminary Determination of Epicenters). The area considered in Ponce et al. (1980a), shown by a light rectangle oriented N-S in figure 11, was somewhat enlarged and reoriented into a rectangle, parallel with the offshore trench, that included all the M£2.",
+      "startOffset" : 38,
+      "endOffset" : 162
+    }, {
+      "referenceID" : 23,
+      "context" : "8, which was analyzed using data from Ponce et al. (1980a, b) and from PDE (Preliminary Determination of Epicenters). The area considered in Ponce et al. (1980a), shown by a light rectangle oriented N-S in figure 11, was somewhat enlarged and reoriented into a rectangle, parallel with the offshore trench, that included all the M£2.8 foreshocks reported by Ponce et al. (1980b) which were detected by the local net emplaced in early November 1978.",
+      "startOffset" : 38,
+      "endOffset" : 379
+    }, {
+      "referenceID" : 7,
+      "context" : "6, were analyzed using data from Gettrust et al. (1981), Hsu et al.",
+      "startOffset" : 33,
+      "endOffset" : 56
+    }, {
+      "referenceID" : 7,
+      "context" : "6, were analyzed using data from Gettrust et al. (1981), Hsu et al. (1983), and an updated computer printout furnished by Professor Hsu.",
+      "startOffset" : 33,
+      "endOffset" : 75
+    }, {
+      "referenceID" : 18,
+      "context" : "7, discussed by Mantis et al. (1979), was the longest LI such sequence then known in California.",
+      "startOffset" : 16,
+      "endOffset" : 37
+    }, {
+      "referenceID" : 4,
+      "context" : "4, in the Himachal Himalayas, India, was the second of two events discussed by Das Gupta (1984). It was preceded by 25 foreshocks over a period of approximately 151 days.",
+      "startOffset" : 83,
+      "endOffset" : 96
+    }, {
+      "referenceID" : 3,
+      "context" : "This event was preceded by intense foreshock activity near the epicenter of the main shock for 11 days before the main shock (Comte et al., 1986).",
+      "startOffset" : 125,
+      "endOffset" : 145
+    } ],
+    "year" : 2010,
+    "abstractText" : "In an analysis of seismic-energy release during 11 sequences of earthquakes that in retrospect can be classed as foreshocks, the accelerating rate of energy release follows, at least in part, a simple equation. This equation (1) is d(Z/E)/dt=C/(t -t)-, where Z/E is the cumulative sum until time, t_, of the square roots of individual foreshock energies computed from reported magnitudes; C_ and ri are constants; and t is a limiting time at which the rate of energy release becomes infinite. The possible time of a major foreshock or main shock, t , is found by the best fit of equation (1), or its integral, to step-like plots of Z/E versus time using successive estimates of t f in linearized regressions until the maximum coefficient of ? determination, r., is obtained. Analyzed examples include sequences preceding earthquakes at Cremasta, Greece, 2/5/66; Haicheng, China, 2/M/75; Oaxaca, Mexico, 11/29/78; Petatlan, Mexico, 3/1^/79; and Central Chile, 3/3/85. In 31 estimates of main-shock time, made as the sequences developed, the errors in 24 were less than one-half and in 10 less than one tenth the time remaining between the time of the last data used and the main shock. Some precursory sequences, or parts of them, yield no solution. Two sequences appear to include in their first parts the aftershocks of a previous event; plots using the integral of equation (1) show the sequences are easily separable into aftershock and foreshock segments. If synthetic seismic sequences of shocks at equal time intervals are constrained to follow equation (1) for various values of ri, the resulting distributions of magnitudes closely follow the linear Gutenberg-Richter relation log N=a_-bM, and n. times b_ is a constant. Rate-process theory and continuum damage mechanics appear to offer leads toward understanding the physical bases for equation (1). In various forms and for decades, equation (1) has been used successfully to predict failure times of stressed metals and ceramics, landslides in soil and rock slopes, and volcanic eruptions.",
+    "creator" : null
+  }
+}

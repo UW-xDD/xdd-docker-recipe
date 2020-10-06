@@ -1,0 +1,25 @@
+[
+    {
+        "publisher": "USGS", 
+        "title": "Foreshock seismic-energy-release functions; tools for estimating time and magnitude of main shocks", 
+        "journal": {
+            "name": {
+                "name": "Open-File Report"
+            }
+        }, 
+        "author": [
+            {
+                "name": "Varnes, D. J."
+            }
+        ], 
+        "year": "1987", 
+        "link": [
+            {
+                "url": "https://www.sciencebase.gov/catalog/item/4f4e4b24e4b07f02db6ae4dd", 
+                "type": "publisher"
+            }
+        ], 
+        "_gddid": "557b82c9e138239225f86468", 
+        "type": "article"
+    }
+]
