@@ -1,96 +1,63 @@
 # Objective
-This document describes a recipe to create a docker image, containing all required software, in order for a text-datamining application to be deployed against the xDD corpus.
+This document outlines the steps necessary to constract a machine-learning application for bulk data-analysis of scientific texts located within the [xDD corpus](https://xdd.wisc.edu).
 
-# Background
-xDD is among the largest collections of text-and-datamining-ready scientific literature in the world. Through unique partnerships with publishers and access to high-throughput computing resources, the system enables researchers to develop science-driven applications using any of a number of available data products, including:
+## Table of Contents
+1. [Prepatory Steps](#prepatory-steps)
+    1. [Determining if xDD is right for your project](#determining-if-xdd-is-right-for-your-project)
+    2. [Finding relevant data within the xDD corpus](#finding-relevant-data-within-the-xdd-corpus)
+2. [Building your application](#building-your-application)
+    1. [Obtaining Sample Data for development purposes](#obtaining-sample-data-for-development-purposes)
+    2. [Defining inputs and outputs within your application](#defining-inputs-and-outputs-within-your-application)
+    3. [Creating and testing your docker image](#creating-a-docker-image)
+    4. [Examples](#examples)
+3. [Running your application](#running-your-application)
+    1. [Requesting application review by xDD team](#requesting-application-review-by-xDD-team)
+    2. [Application Run Request and Obtaining Results](#application-run-request-and-obtaining-results)
 
-- Stanford CoreNLP (https://stanfordnlp.github.io/CoreNLP/)
-- ScienceParse (https://github.com/allenai/science-parse)
-- Extracted raw text 
-- OCRed representations
-- COSMOS-derived tables, figures, and captions (https://github.com/UW-COSMOS/cosmos)
+# Prepatory Steps
+## Determining if xDD is right for your project
+xDD is among the largest collections of text-and-datamining-ready scientific literature in the world. Users can construct applications to extract entities, relationships, figures, tables, equations, models, trends, and predictions from relevant published works.
 
-Users are empowered to utilize these products to mine and survey the literature, developing applications to extract entities, relationships, figures, tables, equations, models, trends, and predictions from relevant published works.
+Due to contractual obligations with the various publishing entities that make up the xDD library, applications may only be deployed within UW-Madison computing resources. The portability of [docker](https://www.docker.com/) containers make them an ideal candidate for this deployment model -- a docker container developed by a scientist locally on their machine will be easily deployable within xDD [high-throughput computing framework](https://chtc.cs.wisc.edu/). 
 
-Due to contractual obligations, these applications may only be deployed across wide subsets of the corpus within UW-Madison resources. The portability of [docker](https://www.docker.com/) containers make them an ideal candidate for this deployment model -- a docker container developed by a scientist locally on their machine will be easily deployable within the computing resources available to xDD in UW-Madison's Center for High Throughput Computing (CHTC). 
+More details about these contractual obligations and other considerations when using the xDD system can be found in the [Terms of Service](https://github.com/ngds/ADEPT_frontend/blob/main/TOS.md#terms-of-service). Two good rules of thumb for determining if your application is permissable under xDD terms are: 1) output is *machine-readable* and not designed for human consumption and 2) output cannot be used to reconstruct large-sections of indivdual articles. We strongly encourage users with any doubts about the vaiability of a potential project to reach out directly to the xDD team (contact@geodeepdive.org) for consultation. 
 
-# Examples
-These are examples of applications deployed against the xDD infrastructure. 
+## Finding relevant data within the xDD corpus
+The first step in the process of building an xDD application is to identify which (if any) documents within the xDD corpus are of interest to your project. There are two principal mechanisms available to find data-mining targets in xDD available, though users should not hesitate to reach out directly to xDD staff if these methods are insufficient to see if other possibilities are available.
 
-- https://github.com/jonhusson/gdd_demo - Finds and extracts relationships between two sets of targets
-- https://github.com/mclapham/app-template - Mines the literature for ichnofossil occurences 
-- https://github.com/ItoErika/Reservoir_app - Extracts geologic units acting as aquifers
-- https://github.com/bserna-usgs/app-template - Recognizes sentences related to the impact of dam removal
-- https://github.com/aazaff/usgs_geochron - Mines for geochronology measurements
-- https://github.com/adamancer/speciminer - Finds occurrences of USNM speciments mentioned in the literature
-- https://github.com/throughput-ec/UnacquiredSites/ - Extracts lat/long coordinates from sentences parsed by CoreNLP
+1. **TEXT BASED SEARCHES** The xDD development team has created the **A**utomated **D**ata **E**xtraction **P**la**T**form ([ADEPT](https://xdd.wisc.edu/adept)) to facilitate this process. The ADEPT front-end allows users to browse available documents in the xDD library using full-text search terms (powered by [ElasticSearch](https://www.elastic.co)) and other common serach parameters (e.g., publication date, journal name). Alternativey, users may intract with the xDD API (https://xdd.wisc.edu/api/v1) directly to search for relevant texts. 
 
-# Communicating application behavior
-The first step in the process is to communicate the application behavior to the xDD team.
+2. **IMAGE BASED SEARCHES** Users can also search for the presence of specific types of *tables*, *figures*, *equations*, and *captions* within xDD articles using the [COSMOS system](https://github.com/UW-COSMOS/cosmos). It is also possible to combine text-based and image-based search methods when defining a target data set.
 
-- What does the application do?
-- What data product(s) are needed for an input?
-- How is the target corpus defined? (keyword, set of keywords, defined list of DOIs, specific journal, etc.)
-- What are the approximate resources required for the application? 
-- Does the application require access to all desired data at once, or can it be split into smaller datasets?
+# Building your application
 
-Open an issue here or email us at contact at geodeepdive.org to initiate the conversation.
+## Obtaining Sample Data for development purposes
+Once a user has identified a set of target publications for potential analysis, using either the [ADEPT browser](https://xdd.wisc.edu/adept#loginPanel), [xDD REST API](https://xdd.wisc.edu/api/v1), the [COSMOS system](https://github.com/UW-COSMOS/cosmos), or some combination thereof, users can request a subset of these publications for local development purposes.
 
-## Defining an input 
-In order to deploy an application against the xDD, the _type_ and _set definition_ of input data must be defined. Fundamental questions of each are:
+This target set of publications can be defined using one or more of the methods below:
+1. Specifying a list of individual article DOIs.
+2. Supplying a list of relevant journals or publishers.
+3. Filtering the corpus by keyword(s), phrase(s), publication date ranges, etc.
 
-- _Type_ : Which of the data products that xDD can provide does the application need?
-- _Set definition_ : What documents need to be processed? 
+Requests for development datasets can be made through the [ADEPT browser](https://xdd.wisc.edu/adept) or by contacting the xDD administrative team directly by email (contact@geodeepdive.org). Users will then be provided a project and user-specific URL to 200 documents randomly sampled from the identified pool of documents. This link will be provided either by email or through the ADEPT browser depending on how the sample data was requested.
 
-Applications can utilize any or all of the above data products. For example, an application may utilize natural language output from Stanford's CoreNLP to extract entity relationships, then read data from COSMOS-derived tables mentioning those entities.
+## Defining inputs and outputs within your application
+An xDD application should have a defined `/input/` and `/output/` directory. The application should be designed such that the expected format of the `/input/` folder is identical to the [sample data](#obtaining-sample-data-for-development-purposes) provided at the beginning of the development process.
 
-Because xDD's corpus is large and multi-disciplinary, it is often important to restrict the set of documents used as input. This can be accomplished in several ways:
+Output must be well-defined and meet [Terms of Service](#determining-if-xdd-is-right-for-your-project). We strongly recommend that users with any doubts about the permissability of output format reach out to the xDD team directly (contact@geodeepdive.org). *Only* items found within the `/output/` directory upon application completion will be returned to users.
 
-1. Specifying a list of article DOIs.
-2. Supplying a list of journals to target.
-3. Filtering the corpus by keyword, phrases, publication date ranges, etc.
+## Creating and testing your docker image
+UW-Madison's Center for High Throughput Compouting provides a guide for creating a docker image [here](http://chtc.cs.wisc.edu/docker-build.shtml). Full documentation for the Dockerfile specification can be found [here](https://docs.docker.com/engine/reference/builder/). CHTC also provides a guide for testing a docker image locally [here](http://chtc.cs.wisc.edu/docker-test.shtml). 
 
-Filtering is done within the processing framework -- only a defined target is needed from the user.
-
-When deployed against the selected dataset, all desired data will be placed within the running container in `/input/`.
-
-## Defining an output
-Output must be well-defined and discussed with the xDD team prior to application deployment. Contractual obligations may limit allowed returns (for example, returning image representations of full pages or large sections of text may not be allowed). Output should be _machine-readable_ instead of designed for human consumption.
-
-# Creating an image
-UW-Madison's Center for High Throughput Compouting provides a guide for creating a docker image [here](http://chtc.cs.wisc.edu/docker-build.shtml). Full documentation for the Dockerfile specification can be found [here](https://docs.docker.com/engine/reference/builder/).
-
-## xDD-specific requirements
+#### Important tips and considerations:
+- Make sure the application is running as a non-root user.
+- Ensure that no extra files are being downloaded or installed at runtime.
+- Think about resource usage as your app is running -- how many CPUs is it using? Memory? Disk? These are important to know, even approximately, before deploying at scale within xDD
 - Input and output paths must be defineable when instantiating the script (or default to a `/input` and `/output`)
 - Images should contain all necessary components, modules, and data. They should ideally be self-contained processing units, without requiring any additional downloads or module installations at runtime.
 - Images will _not_ be run as root. For security reasons, images are run as unprivelged `nobody` user within the infrastructure. Be sure that the software in the container does not expect root-level priveleges (see "Testing the Image" below)
-<!--- (???) define the corpus within the image? 
-    - Can't do doi list inside.. then we'd need to rebuild in order to add new documents..-->
 
-## Testing the image
-CHTC provides a guide for testing a docker image locally [here](http://chtc.cs.wisc.edu/docker-test.shtml). Especially important is:
-
-- Running as a non-root user.
-- Ensuring that no extra files are being downloaded or installed at runtime.
-- Think about resource usage as your app is running -- how many CPUs is it using? Memory? Disk? These are important to know, even approximately, before deploying at scale within xDD
-
-# xDD promises
-- Data files will be prefixed with the documents' unique internal xDD id.
-- CoreNLP will be provided as .tsv files (see the readme for more information), with a column structure of:
-  -  docid (text) -- document's unique ID within our internal database
-  -  sentid (integer) -- sentence's index within the document
-  -  wordidx (integer[]) -- Word's index within the sentences
-  -  word (text[]) -- Word
-  -  poses (text[]) -- Parts of speech
-  -  ners (text[]) -- Named entity recognizer
-  -  lemmas (text[]) -- base or dictionary form of word
-  -  dep_paths (text[]) -- Dependency type
-  -  dep_parents (integer[]) -- Word index of the dependency parent
-
-- Text contents will be provided in a .txt file.
-- Scienceparse will be provided as a .json file.
-
-# Example
+## Examples
 A simple sample application is provided in `example` directory. It's a simple example: use [spaCy](https://spacy.io) to extract all known geopolitical entities (country, states, cites) from text. It uses as its input the text extracted from PDF documents.
 
   - The `Dockerfile` is the recipe for creating the docker image. It is commented to provide explanation and guidance as you build your own. 
@@ -112,8 +79,20 @@ Then, within the container run:
 python extract_gpe.py
 ```
 
-If all goes well, the extracted geopolitical entities will be written to /output/, now visible outside of the container as well.
+If all goes well, the extracted geopolitical entities will be written to /output/, now visible outside of the container as well. A more comprehensive example application from one of our flagship partners can also be viewed [here](https://github.com/throughput-ec/UnacquiredSites/tree/master).
 
-This application is almost ready for deployment within xDD -- you just need to upload the image to https://hub.docker.com or, if it can't be made publically available, supploy the xDD team with the source code and Dockerfile.
+# Running your application
 
+## Requesting application review by xDD team
+xDD administrators need to monitor whether a submitted application is 1) respectful of the [Terms of Service](#determining-if-xdd-is-right-for-your-project) and will work properly on the [high-throughput computing infrastructure](https://chtc.cs.wisc.edu/). Users can use the [ADEPT platform](https://xdd.wisc.edu/adept) to request that an xDD administrator review and approve an application by 1) logging in to https://xdd.wisc.edu/adept, 2) going to the `My Data` pane, 3) navigating to the `Applications` tab, and 4) then clicking on the `New` button and filling out the application submission form. Users can expect approval or rejection of their submission within 7 business days and can check on the status of the approval request from the applications tab.
 
+If users do not wish to use the ADEPT platform they can reach out to xDD staff by email (contact@geodeepdive.org). This method is most suitable when users do not wish to publish their application on DockerHub, as is encouraged by the ADEPT platform. If reaching out by email, users should ensure that the following information is included.
+
+1. What does the application do?
+2. What data product(s) are needed for an input?
+3. How is the target corpus defined? (keyword, set of keywords, defined list of DOIs, specific journal, etc.)
+4. What are the approximate resources required for the application?
+5. Does the application require access to all desired data at once, or can it be split into smaller datasets?
+
+## Application Run Request and Obtaining Results
+Once an application has been approved by xDD administrators, a user can request that it be deployed at scale on the actual xDD corpus by going through the ADEPT platform and clicking on the *application name* in the Applications tab and filling out the generated form. Results will be returned to users in the form of a unique project and user-specific URL to a zipfile of the `/output/` folder contents by email.
