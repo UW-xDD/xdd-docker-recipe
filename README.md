@@ -25,19 +25,24 @@ More details about these contractual obligations and other considerations when u
 ## Finding relevant data within the xDD corpus
 The first step in the process of building an xDD application is to identify which (if any) documents within the xDD corpus are of interest to your project. There are two principal mechanisms available to find data-mining targets in xDD available, though users should not hesitate to reach out directly to xDD staff if these methods are insufficient to see if other possibilities are available.
 
-1. **TEXT BASED SEARCHES** The xDD development team has created the **A**utomated **D**ata **E**xtraction **P**la**T**form ([ADEPT](https://xdd.wisc.edu/adept)) to facilitate this process. The ADEPT front-end allows users to browse available documents in the xDD library using full-text search terms (powered by [ElasticSearch](elastic.co)) and other common serach parameters (e.g., publication date, journal name). Alternativey, users may intract with the xDD API (https://xdd.wisc.edu/api/v1) directly to search for relevant texts.
+1. **TEXT BASED SEARCHES** The xDD development team has created the **A**utomated **D**ata **E**xtraction **P**la**T**form ([ADEPT](https://xdd.wisc.edu/adept)) to facilitate this process. The ADEPT front-end allows users to browse available documents in the xDD library using full-text search terms (powered by [ElasticSearch](https://www.elastic.co)) and other common serach parameters (e.g., publication date, journal name). Alternativey, users may intract with the xDD API (https://xdd.wisc.edu/api/v1) directly to search for relevant texts. 
 
 2. **IMAGE BASED SEARCHES** Users can also search for the presence of specific types of *tables*, *figures*, *equations*, and *captions* within xDD articles using the [COSMOS system](https://github.com/UW-COSMOS/cosmos). It is also possible to combine text-based and image-based search methods when defining a target data set.
 
 # Building your application
 
 ## Obtaining Sample Data for development purposes
-Once a user has identified a set of target publications for potential analysis, using either the [ADEPT browser](https://xdd.wisc.edu/adept#loginPanel), [xDD REST API](https://xdd.wisc.edu/api/v1), the [COSMOS system](https://github.com/UW-COSMOS/cosmos), or some combination thereof, users can request a subset of these publications for local development purposes. 
+Once a user has identified a set of target publications for potential analysis, using either the [ADEPT browser](https://xdd.wisc.edu/adept#loginPanel), [xDD REST API](https://xdd.wisc.edu/api/v1), the [COSMOS system](https://github.com/UW-COSMOS/cosmos), or some combination thereof, users can request a subset of these publications for local development purposes.
 
-Requests for development datasets can be made through the [ADEPT browser](https://xdd.wisc.edu/adept) or by contacting the xDD administrative team directly by email (https://contact@geodeepdive.org). Users will then be provided a project and user-specific URL to 200 documents randomly sampled from the identified pool of documents. This link will be provided either by email or through the ADEPT browser depending on how the sample data was requested.
+This target set of publications can be defined using one or more of the methods below:
+1. Specifying a list of individual article DOIs.
+2. Supplying a list of relevant journals or publishers.
+3. Filtering the corpus by keyword(s), phrase(s), publication date ranges, etc.
+
+Requests for development datasets can be made through the [ADEPT browser](https://xdd.wisc.edu/adept) or by contacting the xDD administrative team directly by email (contact@geodeepdive.org). Users will then be provided a project and user-specific URL to 200 documents randomly sampled from the identified pool of documents. This link will be provided either by email or through the ADEPT browser depending on how the sample data was requested.
 
 ## Defining inputs and outputs within your application
-An xDD application should have a defined `/input/` and `/output/` directory. The application should be designed such that the expected format of the `/input/` folder is identical to the [sample data](#obtaining-sample-data-for-development-purposes) provided at the beginning of the development process. 
+An xDD application should have a defined `/input/` and `/output/` directory. The application should be designed such that the expected format of the `/input/` folder is identical to the [sample data](#obtaining-sample-data-for-development-purposes) provided at the beginning of the development process.
 
 Output must be well-defined and meet [Terms of Service](#determining-if-xdd-is-right-for-your-project). We strongly recommend that users with any doubts about the permissability of output format reach out to the xDD team directly (contact@geodeepdive.org). *Only* items found within the `/output/` directory upon application completion will be returned to users.
 
