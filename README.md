@@ -20,7 +20,7 @@ xDD is among the largest collections of text-and-datamining-ready scientific lit
 
 Due to contractual obligations with the various publishing entities that make up the xDD library, applications may only be deployed within UW-Madison computing resources. The portability of [docker](https://www.docker.com/) containers make them an ideal candidate for this deployment model -- a docker container developed by a scientist locally on their machine will be easily deployable within xDD [high-throughput computing framework](https://chtc.cs.wisc.edu/). 
 
-More details about these contractual obligations and other considerations when using the xDD system can be found in the [Terms of Service](https://github.com/ngds/ADEPT_frontend/blob/main/TOS.md#terms-of-service). Two good rules of thumb for determining if your application is permissable under xDD terms are: 1) output is *machine-readable* and not designed for human consumption and 2) output cannot be used to reconstruct large-sections of indivdual articles. We strongly encourage users with any doubts about the vaiability of a potential project to reach out directly to the xDD team (contact@geodeepdive.org) for consultation. 
+More details about these contractual obligations and other considerations when using the xDD system can be found in the [Terms of Service](https://github.com/ngds/ADEPT_frontend/blob/main/TOS.md#terms-of-service). Two good rules of thumb for determining if your application is permissable under xDD terms are: 1) output is *machine-readable* and not designed for human consumption and 2) output cannot be used to reconstruct large-sections of indivdual articles. We strongly encourage users with any doubts about the viability of a potential project to reach out directly to the xDD team (contact@geodeepdive.org) for consultation. 
 
 ## Finding relevant data within the xDD corpus
 The first step in the process of building an xDD application is to identify which (if any) documents within the xDD corpus are of interest to your project. There are two principal mechanisms available to find data-mining targets in xDD available, though users should not hesitate to reach out directly to xDD staff if these methods are insufficient to see if other possibilities are available.
@@ -55,10 +55,10 @@ UW-Madison's Center for High Throughput Compouting provides a guide for creating
 - Think about resource usage as your app is running -- how many CPUs is it using? Memory? Disk? These are important to know, even approximately, before deploying at scale within xDD
 - Input and output paths must be defineable when instantiating the script (or default to a `/input` and `/output`)
 - Images should contain all necessary components, modules, and data. They should ideally be self-contained processing units, without requiring any additional downloads or module installations at runtime.
-- Images will _not_ be run as root. For security reasons, images are run as unprivelged `nobody` user within the infrastructure. Be sure that the software in the container does not expect root-level priveleges (see "Testing the Image" below)
+- Images will _not_ be run as root. For security reasons, images are run as unprivileged `nobody` user within the infrastructure. Be sure that the software in the container does not expect root-level privileges (see "Testing the Image" below)
 
 ## Examples
-A simple sample application is provided in `example` directory. It's a simple example: use [spaCy](https://spacy.io) to extract all known geopolitical entities (country, states, cites) from text. It uses as its input the text extracted from PDF documents.
+A simple sample application is provided in the `example` directory. It's a simple example: use [spaCy](https://spacy.io) to extract all known geopolitical entities (country, states, cites) from text. It uses as its input the text extracted from PDF documents.
 
   - The `Dockerfile` is the recipe for creating the docker image. It is commented to provide explanation and guidance as you build your own. 
   - The application logic itself is contained in `extract_gpe.py`. It reads from `/input` and writes to `/output` within the running container
