@@ -58,7 +58,7 @@ UW-Madison's Center for High Throughput Computing provides a guide for creating 
 - Images will _not_ be run as root. For security reasons, images are run as unprivileged `nobody` user within the infrastructure. Be sure that the software in the container does not expect root-level privileges (see "Testing the Image" below)
 
 ## Examples
-A simple sample application is provided in `example` directory. It's a simple example: use [spaCy](https://spacy.io) to extract all known geopolitical entities (country, states, cites) from text. It uses as its input the text extracted from PDF documents.
+A simple sample application is provided in the `example` directory. It's a simple example: use [spaCy](https://spacy.io) to extract all known geopolitical entities (country, states, cites) from text. It uses as its input the text extracted from PDF documents.
 
   - The `Dockerfile` is the recipe for creating the docker image. It is commented to provide explanation and guidance as you build your own. 
   - The application logic itself is contained in `extract_gpe.py`. It reads from `/input` and writes to `/output` within the running container
